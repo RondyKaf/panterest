@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/Entity/Pin.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1690415993416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690416002877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n use Doctrine\\DBAL\\Types\\Types;\n use Doctrine\\ORM\\Mapping as ORM;\n \n #[ORM\\Entity(repositoryClass: PinRepository::class)]\n-#\n+#[OR]\n class Pin\n {\n     #[ORM\\Id]\n     #[ORM\\GeneratedValue]\n"
+                },
+                {
+                    "date": 1690416012661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n use Doctrine\\DBAL\\Types\\Types;\n use Doctrine\\ORM\\Mapping as ORM;\n \n #[ORM\\Entity(repositoryClass: PinRepository::class)]\n-#[OR]\n+#[ORM\\Table(na)]\n class Pin\n {\n     #[ORM\\Id]\n     #[ORM\\GeneratedValue]\n"
+                },
+                {
+                    "date": 1690416022679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n use Doctrine\\DBAL\\Types\\Types;\n use Doctrine\\ORM\\Mapping as ORM;\n \n #[ORM\\Entity(repositoryClass: PinRepository::class)]\n-#[ORM\\Table(na)]\n+#[ORM\\Table(name:\"pins\")]\n class Pin\n {\n     #[ORM\\Id]\n     #[ORM\\GeneratedValue]\n"
+                },
+                {
+                    "date": 1690420279788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,7 @@\n \n     public function setDescription(string $description): static\n     {\n         $this->description = $description;\n-\n         return $this;\n     }\n }\n"
+                }
+            ],
+            "date": 1690415993416,
+            "name": "Commit-0",
+            "content": "<?php\n\nnamespace App\\Entity;\n\nuse App\\Repository\\PinRepository;\nuse Doctrine\\DBAL\\Types\\Types;\nuse Doctrine\\ORM\\Mapping as ORM;\n\n#[ORM\\Entity(repositoryClass: PinRepository::class)]\n#\nclass Pin\n{\n    #[ORM\\Id]\n    #[ORM\\GeneratedValue]\n    #[ORM\\Column]\n    private ?int $id = null;\n\n    #[ORM\\Column(length: 255)]\n    private ?string $title = null;\n\n    #[ORM\\Column(type: Types::TEXT)]\n    private ?string $description = null;\n\n    public function getId(): ?int\n    {\n        return $this->id;\n    }\n\n    public function getTitle(): ?string\n    {\n        return $this->title;\n    }\n\n    public function setTitle(string $title): static\n    {\n        $this->title = $title;\n\n        return $this;\n    }\n\n    public function getDescription(): ?string\n    {\n        return $this->description;\n    }\n\n    public function setDescription(string $description): static\n    {\n        $this->description = $description;\n\n        return $this;\n    }\n}\n"
+        }
+    ]
+}

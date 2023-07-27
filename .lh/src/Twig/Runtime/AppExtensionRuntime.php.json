@@ -1,0 +1,114 @@
+{
+    "sourceFile": "src/Twig/Runtime/AppExtensionRuntime.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 24,
+            "patches": [
+                {
+                    "date": 1690418554283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690418604904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething($value)\n+    public function doSomething(int )\n     {\n         return 'ok';\n     }\n }\n"
+                },
+                {
+                    "date": 1690418611912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething(int )\n+    public function doSomething(int $count, string )\n     {\n         return 'ok';\n     }\n }\n"
+                },
+                {
+                    "date": 1690418617006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething(int $count, string )\n+    public function doSomething(int $count, string $)\n     {\n         return 'ok';\n     }\n }\n"
+                },
+                {
+                    "date": 1690418626895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething(int $count, string $)\n+    public function doSomething(int $count, Sg $)\n     {\n         return 'ok';\n     }\n }\n"
+                },
+                {
+                    "date": 1690418638493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething(int $count, Sg $)\n+    public function doSomething(int $count, string $singular,)\n     {\n         return 'ok';\n     }\n }\n"
+                },
+                {
+                    "date": 1690418644656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething(int $count, string $singular,)\n+    public function doSomething(int $count, string $singular,String )\n     {\n         return 'ok';\n     }\n }\n"
+                },
+                {
+                    "date": 1690418653822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething(int $count, string $singular,String )\n+    public function doSomething(int $count, string $singular,String $plu)\n     {\n         return 'ok';\n     }\n }\n"
+                },
+                {
+                    "date": 1690418667054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething(int $count, string $singular,String $plu)\n+    public function doSomething(int $count, string $singular,String $plural):\n     {\n         return 'ok';\n     }\n }\n"
+                },
+                {
+                    "date": 1690418690852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,10 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething(int $count, string $singular,String $plural):\n+    public function doSomething(int $count, string $singular,String $plural):string\n     {\n+        $resu\n         return 'ok';\n     }\n }\n"
+                },
+                {
+                    "date": 1690418709194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,8 @@\n     }\n \n     public function doSomething(int $count, string $singular,String $plural):string\n     {\n-        $resu\n+        $resulte = $\n         return 'ok';\n     }\n }\n"
+                },
+                {
+                    "date": 1690418721357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,8 @@\n     }\n \n     public function doSomething(int $count, string $singular,String $plural):string\n     {\n-        $resulte = $\n+        $resulte = $count=== 1\n         return 'ok';\n     }\n }\n"
+                },
+                {
+                    "date": 1690418730825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,8 @@\n     }\n \n     public function doSomething(int $count, string $singular,String $plural):string\n     {\n-        $resulte = $count=== 1\n+        $resulte = $count=== 1 ? \"pin\" ; \n         return 'ok';\n     }\n }\n"
+                },
+                {
+                    "date": 1690418745547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,8 @@\n     }\n \n     public function doSomething(int $count, string $singular,String $plural):string\n     {\n-        $resulte = $count=== 1 ? \"pin\" ; \n+        $resulte = $count=== 1 ? $singular :  ; \n         return 'ok';\n     }\n }\n"
+                },
+                {
+                    "date": 1690418751010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,8 @@\n     }\n \n     public function doSomething(int $count, string $singular,String $plural):string\n     {\n-        $resulte = $count=== 1 ? $singular :  ; \n+        $resulte = $count=== 1 ? $singular : $plural  ; \n         return 'ok';\n     }\n }\n"
+                },
+                {
+                    "date": 1690418785986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,7 @@\n \n     public function doSomething(int $count, string $singular,String $plural):string\n     {\n         $resulte = $count=== 1 ? $singular : $plural  ; \n-        return 'ok';\n+        return \"\";\n     }\n }\n"
+                },
+                {
+                    "date": 1690418791867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,7 @@\n \n     public function doSomething(int $count, string $singular,String $plural):string\n     {\n         $resulte = $count=== 1 ? $singular : $plural  ; \n-        return \"\";\n+        return \"$\";\n     }\n }\n"
+                },
+                {
+                    "date": 1690418803529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,7 @@\n \n     public function doSomething(int $count, string $singular,String $plural):string\n     {\n         $resulte = $count=== 1 ? $singular : $plural  ; \n-        return \"$\";\n+        return \"$count \";\n     }\n }\n"
+                },
+                {
+                    "date": 1690418812826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,7 @@\n \n     public function doSomething(int $count, string $singular,String $plural):string\n     {\n         $resulte = $count=== 1 ? $singular : $plural  ; \n-        return \"$count \";\n+        return \"$count $resultz\";\n     }\n }\n"
+                },
+                {
+                    "date": 1690419012186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething(int $count, string $singular,String $plural):string\n+    public function doSomething(int $count, string $singular,?String $plural):string\n     {\n         $resulte = $count=== 1 ? $singular : $plural  ; \n-        return \"$count $resultz\";\n+        return \"$count $resulte\";\n     }\n }\n"
+                },
+                {
+                    "date": 1690419030861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething(int $count, string $singular,?String $plural):string\n+    public function doSomething(int $count, string $singular,?string $plural = null):string\n     {\n         $resulte = $count=== 1 ? $singular : $plural  ; \n         return \"$count $resulte\";\n     }\n"
+                },
+                {
+                    "date": 1690419048956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n     }\n \n     public function doSomething(int $count, string $singular,?string $plural = null):string\n     {\n+        $plu\n         $resulte = $count=== 1 ? $singular : $plural  ; \n         return \"$count $resulte\";\n     }\n }\n"
+                },
+                {
+                    "date": 1690419057826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     }\n \n     public function doSomething(int $count, string $singular,?string $plural = null):string\n     {\n-        $plu\n+        $plural = $plural ?? \n         $resulte = $count=== 1 ? $singular : $plural  ; \n         return \"$count $resulte\";\n     }\n }\n"
+                },
+                {
+                    "date": 1690419067220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     }\n \n     public function doSomething(int $count, string $singular,?string $plural = null):string\n     {\n-        $plural = $plural ?? \n+        $plural = $plural ?? $singular . \n         $resulte = $count=== 1 ? $singular : $plural  ; \n         return \"$count $resulte\";\n     }\n }\n"
+                },
+                {
+                    "date": 1690419073317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     }\n \n     public function doSomething(int $count, string $singular,?string $plural = null):string\n     {\n-        $plural = $plural ?? $singular . \n+        $plural = $plural ?? $singular . \"s\";\n         $resulte = $count=== 1 ? $singular : $plural  ; \n         return \"$count $resulte\";\n     }\n }\n"
+                }
+            ],
+            "date": 1690418554283,
+            "name": "Commit-0",
+            "content": "<?php\n\nnamespace App\\Twig\\Runtime;\n\nuse Twig\\Extension\\RuntimeExtensionInterface;\n\nclass AppExtensionRuntime implements RuntimeExtensionInterface\n{\n    public function __construct()\n    {\n        // Inject dependencies if needed\n    }\n\n    public function doSomething($value)\n    {\n        return 'ok';\n    }\n}\n"
+        }
+    ]
+}

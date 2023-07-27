@@ -1,0 +1,230 @@
+{
+    "sourceFile": "templates/pins/index.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 53,
+            "patches": [
+                {
+                    "date": 1690414806185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690414813196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title %}{% endblock %}\n+{% block title %}Panterest{% endblock %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                },
+                {
+                    "date": 1690414834294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,8 @@\n \n {% block title %}Panterest{% endblock %}\n \n {% block body %}\n-<style>\n-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n-</style>\n \n <div class=\"example-wrapper\">\n     <h1>Hello {{ controller_name }}! ✅</h1>\n \n"
+                },
+                {
+                    "date": 1690414846517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,14 +3,5 @@\n {% block title %}Panterest{% endblock %}\n \n {% block body %}\n \n-<div class=\"example-wrapper\">\n-    <h1>Hello {{ controller_name }}! ✅</h1>\n-\n-    This friendly message is coming from:\n-    <ul>\n-        <li>Your controller at <code><a href=\"{{ '/Users/rondy/Sites/site_complet/panterest/src/Controller/PinsController.php'|file_link(0) }}\">src/Controller/PinsController.php</a></code></li>\n-        <li>Your template at <code><a href=\"{{ '/Users/rondy/Sites/site_complet/panterest/templates/pins/index.html.twig'|file_link(0) }}\">templates/pins/index.html.twig</a></code></li>\n-    </ul>\n-</div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690414852314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n \n {% block title %}Panterest{% endblock %}\n \n {% block body %}\n-\n+    <h1></h1>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690414858846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n \n {% block title %}Panterest{% endblock %}\n \n {% block body %}\n-    <h1></h1>\n+    <h1>All pin</h1>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690414893092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title %}Panterest{% endblock %}\n+{% block title %}\n \n {% block body %}\n     <h1>All pin</h1>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690414901641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title %}\n+{% block Find all  %}\n \n {% block body %}\n     <h1>All pin</h1>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690414913555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block Find all  %}\n+{% block \"Find all best pins %}\n \n {% block body %}\n     <h1>All pin</h1>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690414937810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block \"Find all best pins %}\n+{% block title\"Find all best pins\" %}\n \n {% block body %}\n     <h1>All pin</h1>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690417626174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,6 @@\n {% block title\"Find all best pins\" %}\n \n {% block body %}\n     <h1>All pin</h1>\n+    \n {% endblock %}\n"
+                },
+                {
+                    "date": 1690417633299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,8 @@\n {% block title\"Find all best pins\" %}\n \n {% block body %}\n     <h1>All pin</h1>\n-    \n+    {%{% for item in items %}\n+        \n+    {% endfor %}%}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690417640601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n {% block title\"Find all best pins\" %}\n \n {% block body %}\n     <h1>All pin</h1>\n-    {%{% for item in items %}\n+    {% for pin in items %}\n         \n-    {% endfor %}%}\n+    {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690417673010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n \n {% block body %}\n     <h1>All pin</h1>\n     {% for pin in items %}\n-        \n+        {{}}\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690417701648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n {% block title\"Find all best pins\" %}\n \n {% block body %}\n     <h1>All pin</h1>\n-    {% for pin in items %}\n-        {{}}\n+    {% for pin in pins %}\n+        {{ pin }}\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690417741608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,6 @@\n {% block title\"Find all best pins\" %}\n \n {% block body %}\n     <h1>All pin</h1>\n-    {% for pin in pins %}\n-        {{ pin }}\n-    {% endfor %}\n+    {{ {{ dump() }}}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690417748572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n {% block title\"Find all best pins\" %}\n \n {% block body %}\n     <h1>All pin</h1>\n-    {{ {{ dump() }}}}\n+    {{ dump(pins) }}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690417829550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n {% block title\"Find all best pins\" %}\n \n {% block body %}\n     <h1>All pin</h1>\n-    {{ dump(pins) }}\n+    \n {% endblock %}\n"
+                },
+                {
+                    "date": 1690417837897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,8 @@\n {% block title\"Find all best pins\" %}\n \n {% block body %}\n     <h1>All pin</h1>\n-    \n+    {% for pin in pins %}\n+        \n+    {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690417845479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n \n {% block body %}\n     <h1>All pin</h1>\n     {% for pin in pins %}\n-        \n+        <article> {{</article> \n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690417852831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n \n {% block body %}\n     <h1>All pin</h1>\n     {% for pin in pins %}\n-        <article> {{</article> \n+        <article> {{ pin.title}}</article> \n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690417859561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,7 @@\n {% block body %}\n     <h1>All pin</h1>\n     {% for pin in pins %}\n         <article> {{ pin.title}}</article> \n+        <p></p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690417865969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n {% block body %}\n     <h1>All pin</h1>\n     {% for pin in pins %}\n         <article> {{ pin.title}}</article> \n-        <p></p>\n+        <p>{{  }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690417871078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n {% block body %}\n     <h1>All pin</h1>\n     {% for pin in pins %}\n         <article> {{ pin.title}}</article> \n-        <p>{{  }}</p>\n+        <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690417937790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,10 @@\n \n {% block title\"Find all best pins\" %}\n \n {% block body %}\n-    <h1>All pin</h1>\n+    <h1>{{All pin</h1>\n     {% for pin in pins %}\n-        <article> {{ pin.title}}</article> \n+        <article> {{ pin.title }}</article> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690417944800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n {% block title\"Find all best pins\" %}\n \n {% block body %}\n-    <h1>{{All pin</h1>\n+    <h1>{{ pins}}All pin</h1>\n     {% for pin in pins %}\n         <article> {{ pin.title }}</article> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690417953529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n {% block title\"Find all best pins\" %}\n \n {% block body %}\n-    <h1>{{ pins}}All pin</h1>\n+    <h1>{{ pins|length }}All pin</h1>\n     {% for pin in pins %}\n         <article> {{ pin.title }}</article> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690417963045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n {% block title\"Find all best pins\" %}\n \n {% block body %}\n-    <h1>{{ pins|length }}All pin</h1>\n+    <h1>{{ pins|length }} pin</h1>\n     {% for pin in pins %}\n         <article> {{ pin.title }}</article> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690418016423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n {% block title\"Find all best pins\" %}\n \n {% block body %}\n-    <h1>{{ pins|length }} pin</h1>\n+    <h1>{{ (pins|length }} pin</h1>\n     {% for pin in pins %}\n         <article> {{ pin.title }}</article> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690418022732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n {% block title\"Find all best pins\" %}\n \n {% block body %}\n-    <h1>{{ (pins|length }} pin</h1>\n+    <h1>{{ pli(pins|length) }} pin</h1>\n     {% for pin in pins %}\n         <article> {{ pin.title }}</article> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690418028440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n {% block title\"Find all best pins\" %}\n \n {% block body %}\n-    <h1>{{ pli(pins|length) }} pin</h1>\n+    <h1>{{ plura(pins|length) }} pin</h1>\n     {% for pin in pins %}\n         <article> {{ pin.title }}</article> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690418035801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n {% block title\"Find all best pins\" %}\n \n {% block body %}\n-    <h1>{{ plura(pins|length) }} pin</h1>\n+    <h1>{{ pluralize(pins|length) }} pin</h1>\n     {% for pin in pins %}\n         <article> {{ pin.title }}</article> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690418051719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n {% block title\"Find all best pins\" %}\n \n {% block body %}\n-    <h1>{{ pluralize(pins|length) }} pin</h1>\n+    <h1>{{ pluralize(pins|length,  }} pin</h1>\n     {% for pin in pins %}\n         <article> {{ pin.title }}</article> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690418058550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n {% block title\"Find all best pins\" %}\n \n {% block body %}\n-    <h1>{{ pluralize(pins|length,  }} pin</h1>\n+    <h1>{{ pluralize(pins|length, ''  }} pin</h1>\n     {% for pin in pins %}\n         <article> {{ pin.title }}</article> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690418065363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n {% block title\"Find all best pins\" %}\n \n {% block body %}\n-    <h1>{{ pluralize(pins|length, ''  }} pin</h1>\n+    <h1>{{ pluralize(pins|length, 'pin',\"pins\"  }} pin</h1>\n     {% for pin in pins %}\n         <article> {{ pin.title }}</article> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690418073577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n {% block title\"Find all best pins\" %}\n \n {% block body %}\n-    <h1>{{ pluralize(pins|length, 'pin',\"pins\"  }} pin</h1>\n+    <h1>{{ pluralize(pins|length, 'pin','pins }} pin</h1>\n     {% for pin in pins %}\n         <article> {{ pin.title }}</article> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690418082978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n {% block title\"Find all best pins\" %}\n \n {% block body %}\n-    <h1>{{ pluralize(pins|length, 'pin','pins }} pin</h1>\n+    <h1>{{ pluralize(pins|length, 'pin','pins') }} pin</h1>\n     {% for pin in pins %}\n         <article> {{ pin.title }}</article> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690418092303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n {% block title\"Find all best pins\" %}\n \n {% block body %}\n-    <h1>{{ pluralize(pins|length, 'pin','pins') }} pin</h1>\n+    <h1>{{ pluralize( pins|length, 'pin','pins') }} pin</h1>\n     {% for pin in pins %}\n         <article> {{ pin.title }}</article> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690418845308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n {% block title\"Find all best pins\" %}\n \n {% block body %}\n-    <h1>{{ pluralize( pins|length, 'pin','pins') }} pin</h1>\n+    <h1>{{ pluralize( pins|length, 'pin','pins') }}</h1>\n     {% for pin in pins %}\n         <article> {{ pin.title }}</article> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690419096920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n {% block title\"Find all best pins\" %}\n \n {% block body %}\n-    <h1>{{ pluralize( pins|length, 'pin','pins') }}</h1>\n+    <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n         <article> {{ pin.title }}</article> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690419345945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <article> {{ pin.title }}</article> \n+        <h1> {{ pin.title }}</article> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690419354551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h1> {{ pin.title }}</article> \n+        <h1> {{ pin.title }}</> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690419359803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h1> {{ pin.title }}</> \n+        <h2> {{ pin.title }}</h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690419365868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2> {{ pin.title }}</h2> \n+        <h2><a href=\"\"></a> {{ pin.title }}</h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690419371789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2><a href=\"\"></a> {{ pin.title }}</h2> \n+        <h2><a href=\"{{  }}\"></a>{{ pin.title }}</h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690420016067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2><a href=\"{{  }}\"></a>{{ pin.title }}</h2> \n+        <h2><a href=\"{{ \" }}\"></a>{{ pin.title }}</h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690420021444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2><a href=\"{{ \" }}\"></a>{{ pin.title }}</h2> \n+        <h2><a href=\"{{ \"app_pins_show }}\"></a>{{ pin.title }}</h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690420029631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2><a href=\"{{ \"app_pins_show }}\"></a>{{ pin.title }}</h2> \n+        <h2><a href=\"{{ 'app_pins_show' }}\"></a>{{ pin.title }}</h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690420429201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2><a href=\"{{ 'app_pins_show' }}\"></a>{{ pin.title }}</h2> \n+        <h2><a href=\"{{ path()'app_pins_show' }}\"></a>{{ pin.title }}</h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690420434445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2><a href=\"{{ path()'app_pins_show' }}\"></a>{{ pin.title }}</h2> \n+        <h2><a href=\"{{ path('app_pins_show') }}\"></a>{{ pin.title }}</h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690420448043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2><a href=\"{{ path('app_pins_show') }}\"></a>{{ pin.title }}</h2> \n+        <h2><a href=\"{{ path('app_pins_show',) }}\"></a>{{ pin.title }}</h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690420456556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2><a href=\"{{ path('app_pins_show',) }}\"></a>{{ pin.title }}</h2> \n+        <h2><a href=\"{{ path('app_pins_show',{\"id\"}) }}\"></a>{{ pin.title }}</h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690420462448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2><a href=\"{{ path('app_pins_show',{\"id\"}) }}\"></a>{{ pin.title }}</h2> \n+        <h2><a href=\"{{ path('app_pins_show',{\"id\":pin.}) }}\"></a>{{ pin.title }}</h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690420489070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2><a href=\"{{ path('app_pins_show',{\"id\":pin.}) }}\"></a>{{ pin.title }}</h2> \n+        <h2><a href=\"{{ path('app_pins_show',{\"id\":pin.id}) }}\"></a></h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                }
+            ],
+            "date": 1690414806185,
+            "name": "Commit-0",
+            "content": "{% extends 'base.html.twig' %}\n\n{% block title %}{% endblock %}\n\n{% block body %}\n<style>\n    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n</style>\n\n<div class=\"example-wrapper\">\n    <h1>Hello {{ controller_name }}! ✅</h1>\n\n    This friendly message is coming from:\n    <ul>\n        <li>Your controller at <code><a href=\"{{ '/Users/rondy/Sites/site_complet/panterest/src/Controller/PinsController.php'|file_link(0) }}\">src/Controller/PinsController.php</a></code></li>\n        <li>Your template at <code><a href=\"{{ '/Users/rondy/Sites/site_complet/panterest/templates/pins/index.html.twig'|file_link(0) }}\">templates/pins/index.html.twig</a></code></li>\n    </ul>\n</div>\n{% endblock %}\n"
+        }
+    ]
+}

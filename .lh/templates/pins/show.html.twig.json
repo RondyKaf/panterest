@@ -1,0 +1,138 @@
+{
+    "sourceFile": "templates/pins/show.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 30,
+            "patches": [
+                {
+                    "date": 1690420768148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690420776648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+<!DOCTYPE html>\n+<html lang=\"en\">\n+<head>\n+    <meta charset=\"UTF-8\">\n+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n+    <title>Document</title>\n+</head>\n+<body>\n+    a\n+</body>\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690420782281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <title>Document</title>\n </head>\n <body>\n-    a\n+    <article>{{</article>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690420787354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <title>Document</title>\n </head>\n <body>\n-    <article>{{</article>\n+    <article>{{  }}</article>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690420792758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <title>Document</title>\n </head>\n <body>\n-    <article>{{  }}</article>\n+    <article>{{ pin.title }}</article>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690420798109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,7 @@\n     <title>Document</title>\n </head>\n <body>\n     <article>{{ pin.title }}</article>\n+    <p></p>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690420803969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n     <title>Document</title>\n </head>\n <body>\n     <article>{{ pin.title }}</article>\n-    <p></p>\n+    <p>description</p>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690420817698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n     <title>Document</title>\n </head>\n <body>\n     <article>{{ pin.title }}</article>\n-    <p>description</p>\n+    <p>{{ pin.desc</p>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690420822877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n     <title>Document</title>\n </head>\n <body>\n     <article>{{ pin.title }}</article>\n-    <p>{{ pin.desc</p>\n+    <p>{{ pin.description}}</p>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690420959383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,11 @@\n-<!DOCTYPE html>\n-<html lang=\"en\">\n-<head>\n-    <meta charset=\"UTF-8\">\n-    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n-    <title>Document</title>\n-</head>\n-<body>\n-    <article>{{ pin.title }}</article>\n-    <p>{{ pin.description}}</p>\n-</body>\n-</html>\n\\ No newline at end of file\n+{% extends 'base.html.twig' %}\n+\n+{% block title\"Find all best pins\" %}\n+\n+{% block body %}\n+    <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n+    {% for pin in pins %}\n+        <h2><a href=\"{{ path('app_pins_show',{\"id\":pin.id}) }}\">{{ pin.title }}</a></h2> \n+        <p>{{ pin.description }}</p>\n+    {% endfor %}\n+{% endblock %}\n"
+                },
+                {
+                    "date": 1690420967982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title\"Find all best pins\" %}\n+{% block title best pins\" %}\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n"
+                },
+                {
+                    "date": 1690420973088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title best pins\" %}\n+{% block title \"S best pins\" %}\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n"
+                },
+                {
+                    "date": 1690420983343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,8 @@\n {% extends 'base.html.twig' %}\n \n-{% block title \"S best pins\" %}\n+{% block title \"Show one best pins\" %}\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n-    {% for pin in pins %}\n-        <h2><a href=\"{{ path('app_pins_show',{\"id\":pin.id}) }}\">{{ pin.title }}</a></h2> \n-        <p>{{ pin.description }}</p>\n-    {% endfor %}\n+    \n {% endblock %}\n"
+                },
+                {
+                    "date": 1690420989170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n \n {% block title \"Show one best pins\" %}\n \n {% block body %}\n-    <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n+    a\n     \n {% endblock %}\n"
+                },
+                {
+                    "date": 1690420998333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n \n {% block title \"Show one best pins\" %}\n \n {% block body %}\n-    a\n+    <article></article>\n     \n {% endblock %}\n"
+                },
+                {
+                    "date": 1690421006242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n \n {% block title \"Show one best pins\" %}\n \n {% block body %}\n-    <article></article>\n+    <article>{{ pin.title }}</article>\n     \n {% endblock %}\n"
+                },
+                {
+                    "date": 1690421016524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n {% block title \"Show one best pins\" %}\n \n {% block body %}\n     <article>{{ pin.title }}</article>\n-    \n+    <p>{{ description </p>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690421031875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n {% block title \"Show one best pins\" %}\n \n {% block body %}\n     <article>{{ pin.title }}</article>\n-    <p>{{ description </p>\n+    <p>{{ pin.description }}</p>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690421113432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title \"Show one best pins\" %}\n+{% block title pin.title %}\n \n {% block body %}\n     <article>{{ pin.title }}</article>\n     <p>{{ pin.description }}</p>\n"
+                },
+                {
+                    "date": 1690421123209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n {% block title pin.title %}\n \n {% block body %}\n     <article>{{ pin.title }}</article>\n-    <p>{{ pin.description }}</p>\n+    \n {% endblock %}\n"
+                },
+                {
+                    "date": 1690421128540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,8 @@\n \n {% block title pin.title %}\n \n {% block body %}\n-    <article>{{ pin.title }}</article>\n+    <article>\n+        h{{ pin.title }}</article>\n     \n {% endblock %}\n"
+                },
+                {
+                    "date": 1690421137421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,8 @@\n {% block title pin.title %}\n \n {% block body %}\n     <article>\n-        h{{ pin.title }}</article>\n+        <h1></h1>\n+    </article>\n     \n {% endblock %}\n"
+                },
+                {
+                    "date": 1690421168364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n {% block title pin.title %}\n \n {% block body %}\n     <article>\n-        <h1></h1>\n+        <h1>{{ pin.title }}</h1>\n+        p\n     </article>\n     \n {% endblock %}\n"
+                },
+                {
+                    "date": 1690421175054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <article>\n         <h1>{{ pin.title }}</h1>\n-        p\n+        <p>description</p>\n     </article>\n     \n {% endblock %}\n"
+                },
+                {
+                    "date": 1690421182624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <article>\n         <h1>{{ pin.title }}</h1>\n-        <p>description</p>\n+        <p>{{ description }}</p>\n     </article>\n     \n {% endblock %}\n"
+                },
+                {
+                    "date": 1690421200697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n     <article>\n         <h1>{{ pin.title }}</h1>\n         <p>{{ description }}</p>\n     </article>\n-    \n+    <a href=\"\"></a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690421207070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n     <article>\n         <h1>{{ pin.title }}</h1>\n         <p>{{ description }}</p>\n     </article>\n-    <a href=\"\"></a>\n+    <a href=\"{{ path()}}\"></a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690421212806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n     <article>\n         <h1>{{ pin.title }}</h1>\n         <p>{{ description }}</p>\n     </article>\n-    <a href=\"{{ path()}}\"></a>\n+    <a href=\"{{ path('app_homr')}}\"></a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690421219924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n     <article>\n         <h1>{{ pin.title }}</h1>\n         <p>{{ description }}</p>\n     </article>\n-    <a href=\"{{ path('app_homr')}}\"></a>\n+    <a href=\"{{ path('app_home') }}\"></a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690421231067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n     <article>\n         <h1>{{ pin.title }}</h1>\n         <p>{{ description }}</p>\n     </article>\n-    <a href=\"{{ path('app_home') }}\"></a>\n+    <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690421258348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n     <article>\n         <h1>{{ pin.title }}</h1>\n         <p>{{ description }}</p>\n     </article>\n-    <a href=\"{{ path('app_home') }}\">Go Back</a>\n+    <a href=\"{{ path('app_home') }}\">Go B gack</a>\n {% endblock %}\n"
+                }
+            ],
+            "date": 1690420768148,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}
