@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 30,
+            "activePatchIndex": 43,
             "patches": [
                 {
                     "date": 1690420768148,
@@ -128,6 +128,58 @@
                 {
                     "date": 1690421258348,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n     <article>\n         <h1>{{ pin.title }}</h1>\n         <p>{{ description }}</p>\n     </article>\n-    <a href=\"{{ path('app_home') }}\">Go Back</a>\n+    <a href=\"{{ path('app_home') }}\">Go B gack</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690428512399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <article>\n         <h1>{{ pin.title }}</h1>\n-        <p>{{ description }}</p>\n+        <p>{{ pin.description }}</p>\n     </article>\n-    <a href=\"{{ path('app_home') }}\">Go B gack</a>\n+    <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690429224474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,8 @@\n     <article>\n         <h1>{{ pin.title }}</h1>\n         <p>{{ pin.description }}</p>\n     </article>\n+\n+    a\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690429231586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n         <h1>{{ pin.title }}</h1>\n         <p>{{ pin.description }}</p>\n     </article>\n \n-    a\n+    <a href=\"{{  }}\"></a>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690429241455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n         <h1>{{ pin.title }}</h1>\n         <p>{{ pin.description }}</p>\n     </article>\n \n-    <a href=\"{{  }}\"></a>\n+    <a href=\"{{  }}\">Edit</a>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690429247035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n         <h1>{{ pin.title }}</h1>\n         <p>{{ pin.description }}</p>\n     </article>\n \n-    <a href=\"{{  }}\">Edit</a>\n+    <a href=\"{{ path('') }}\">Edit</a>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690429255133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n         <h1>{{ pin.title }}</h1>\n         <p>{{ pin.description }}</p>\n     </article>\n \n-    <a href=\"{{ path('') }}\">Edit</a>\n+    <a href=\"{{ path('app_pins_edit') }}\">Edit</a>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690429456143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n         <h1>{{ pin.title }}</h1>\n         <p>{{ pin.description }}</p>\n     </article>\n \n-    <a href=\"{{ path('app_pins_edit') }}\">Edit</a>\n+    <a href=\"{{ path('app_pins_edit',) }}\">Edit</a>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690429463016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n         <h1>{{ pin.title }}</h1>\n         <p>{{ pin.description }}</p>\n     </article>\n \n-    <a href=\"{{ path('app_pins_edit',) }}\">Edit</a>\n+    <a href=\"{{ path('app_pins_edit',{'id':'}) }}\">Edit</a>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690429469812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n         <h1>{{ pin.title }}</h1>\n         <p>{{ pin.description }}</p>\n     </article>\n \n-    <a href=\"{{ path('app_pins_edit',{'id':'}) }}\">Edit</a>\n+    <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690431245535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n         <h1>{{ pin.title }}</h1>\n         <p>{{ pin.description }}</p>\n     </article>\n \n-    <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a>\n+    <a href=\"{{ path('app_pins_edit',{'for}) }}\">Edit</a>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690431736893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,8 @@\n         <h1>{{ pin.title }}</h1>\n         <p>{{ pin.description }}</p>\n     </article>\n \n-    <a href=\"{{ path('app_pins_edit',{'for}) }}\">Edit</a>\n+    <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a>\n+    \n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690431743587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a>\n-    \n+    {{ pin.id }}\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690432492926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n         <h1>{{ pin.title }}</h1>\n         <p>{{ pin.description }}</p>\n     </article>\n \n-    <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a>\n+    <a href=\"{{ path('app_pins_edit',{'id': pin.id} }}\">Edit</a>\n     {{ pin.id }}\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
                 }
             ],
             "date": 1690420768148,

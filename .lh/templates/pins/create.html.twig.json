@@ -1,0 +1,158 @@
+{
+    "sourceFile": "templates/pins/create.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 35,
+            "patches": [
+                {
+                    "date": 1690425900330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690425915868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title pin.title %}\n+{% block title \" %}\n \n {% block body %}\n     <article>\n         <h1>{{ pin.title }}</h1>\n"
+                },
+                {
+                    "date": 1690425937769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,8 @@\n {% extends 'base.html.twig' %}\n \n-{% block title \" %}\n+{% block title \"New Pin\" %}\n \n {% block body %}\n-    <article>\n-        <h1>{{ pin.title }}</h1>\n-        <p>{{ description }}</p>\n-    </article>\n+    \n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690425945937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n \n {% block title \"New Pin\" %}\n \n {% block body %}\n-    \n+    <h1></h1>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690425957220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,6 @@\n \n {% block title \"New Pin\" %}\n \n {% block body %}\n-    <h1></h1>\n-    <a href=\"{{ path('app_home') }}\">Go Back</a>\n+    <h1>Create Pin</h1>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426322473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,7 @@\n {% block title \"New Pin\" %}\n \n {% block body %}\n     <h1>Create Pin</h1>\n+\n+    \n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426330713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n-    \n+    {{ form(, {'method': 'GET'}) }}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426337244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n-    {{ form(, {'method': 'GET'}) }}\n+    {{ form(formulaire, {'method': 'GET'}) }}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426359981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n-    {{ form(formulaire, {'method': 'GET'}) }}\n+    {{ form(formulaire., {'method': 'GET'}) }}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426387627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n-    {{ form(formulaire., {'method': 'GET'}) }}\n+    {{ form(formulaire, {'method': 'GET'}) }}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426742818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n-    {{ form(formulaire, {'method': 'GET'}) }}\n+    {{ form.(formulaire, {'method': 'GET'}) }}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426753480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n-    {{ form.(formulaire, {'method': 'GET'}) }}\n+    {{ form.{{ form_start(form) }}(formulaire, {'method': 'GET'}) }}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426768166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n-    {{ form.{{ form_start(form) }}(formulaire, {'method': 'GET'}) }}\n+    {{ form.st(formulaire, {'method': 'GET'}) }}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426774822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n-    {{ form.st(formulaire, {'method': 'GET'}) }}\n+    {{ {{ form_start(a) }}(formulaire, {'method': 'GET'}) }}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426780117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n-    {{ {{ form_start(a) }}(formulaire, {'method': 'GET'}) }}\n+    {{ {{ form_start(a(formulaire, {'method': 'GET'}) }}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426792111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n-    {{ {{ form_start(a(formulaire, {'method': 'GET'}) }}\n+    {{ form_start(formulaire, {'method': 'GET'}) }}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426797552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,6 @@\n {% block body %}\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire, {'method': 'GET'}) }}\n+    {{}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426804373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n {% block body %}\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire, {'method': 'GET'}) }}\n-    {{}}\n+    {{ form_end}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426811738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,7 @@\n {% block body %}\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire, {'method': 'GET'}) }}\n+        {{ form}}\n     {{ form_end}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426817522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n {% block body %}\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire, {'method': 'GET'}) }}\n-        {{ form}}\n+        {{ form_w}}\n     {{ form_end}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426826361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n {% block body %}\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire, {'method': 'GET'}) }}\n-        {{ form_w}}\n+        {{ form_widget(form) }}\n     {{ form_end}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426836529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n {% block body %}\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire, {'method': 'GET'}) }}\n-        {{ form_widget(form) }}\n+        {{ form_widget(formulaire) }}\n     {{ form_end}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426847221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,7 @@\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire, {'method': 'GET'}) }}\n         {{ form_widget(formulaire) }}\n+        inp\n     {{ form_end}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426854321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire, {'method': 'GET'}) }}\n         {{ form_widget(formulaire) }}\n-        inp\n+        <input type=\"submit\">\n     {{ form_end}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426860432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire, {'method': 'GET'}) }}\n         {{ form_widget(formulaire) }}\n-        <input type=\"submit\">\n+        <input type=\"submit\" >\n     {{ form_end}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426865759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire, {'method': 'GET'}) }}\n         {{ form_widget(formulaire) }}\n-        <input type=\"submit\" >\n+        <input type=\"submit\" value=\">\n     {{ form_end}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426871377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire, {'method': 'GET'}) }}\n         {{ form_widget(formulaire) }}\n-        <input type=\"submit\" value=\">\n+        <input type=\"submit\" value=\"Create \">\n     {{ form_end}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426892462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire, {'method': 'GET'}) }}\n         {{ form_widget(formulaire) }}\n-        <input type=\"submit\" value=\"Create \">\n-    {{ form_end}}\n+        <input type=\"submit\" value=\"Create Pin\">\n+    {{ form_end()}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690426898619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n \n     {{ form_start(formulaire, {'method': 'GET'}) }}\n         {{ form_widget(formulaire) }}\n         <input type=\"submit\" value=\"Create Pin\">\n-    {{ form_end()}}\n+    {{ form_end(formulaire)}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690427363998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire, {'method': 'GET'}) }}\n         {{ form_widget(formulaire) }}\n-        <input type=\"submit\" value=\"Create Pin\">\n+        <input type=\"submit\" value=\"Create Pin\" for>\n     {{ form_end(formulaire)}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690427387908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire, {'method': 'GET'}) }}\n         {{ form_widget(formulaire) }}\n-        <input type=\"submit\" value=\"Create Pin\" for>\n+        <input type=\"submit\" value=\"Create Pin\" formnovalidate>\n     {{ form_end(formulaire)}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690428007557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n-    {{ form_start(formulaire, {'method': 'GET'}) }}\n+    {{ form_start(formulaire }}\n         {{ form_widget(formulaire) }}\n         <input type=\"submit\" value=\"Create Pin\" formnovalidate>\n     {{ form_end(formulaire)}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690428030519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n-    {{ form_start(formulaire }}\n+    {{ form_start(formulaire, {'method': 'GET'}) }}\n         {{ form_widget(formulaire) }}\n         <input type=\"submit\" value=\"Create Pin\" formnovalidate>\n     {{ form_end(formulaire)}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690428036380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n-    {{ form_start(formulaire, {'method': 'GET'}) }}\n+    {{ form_start(formulaire, {'method': 'GET',}) }}\n         {{ form_widget(formulaire) }}\n         <input type=\"submit\" value=\"Create Pin\" formnovalidate>\n     {{ form_end(formulaire)}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690428359400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n-    {{ form_start(formulaire, {'method': 'GET',}) }}\n+    {{ form_start(formulaire, {'method': 'GET','POST'}) }}\n         {{ form_widget(formulaire) }}\n-        <input type=\"submit\" value=\"Create Pin\" formnovalidate>\n+        <input type=\"submit\" value=\"Create Pin\"e>\n     {{ form_end(formulaire)}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690428366569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n-    {{ form_start(formulaire, {'method': 'GET','POST'}) }}\n+    {{ form_start(formulaire) }}\n         {{ form_widget(formulaire) }}\n-        <input type=\"submit\" value=\"Create Pin\"e>\n+        <input type=\"submit\" value=\"Create Pin\">\n     {{ form_end(formulaire)}}\n {% endblock %}\n"
+                }
+            ],
+            "date": 1690425900330,
+            "name": "Commit-0",
+            "content": "{% extends 'base.html.twig' %}\n\n{% block title pin.title %}\n\n{% block body %}\n    <article>\n        <h1>{{ pin.title }}</h1>\n        <p>{{ description }}</p>\n    </article>\n    <a href=\"{{ path('app_home') }}\">Go Back</a>\n{% endblock %}\n"
+        }
+    ]
+}

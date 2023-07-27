@@ -1,0 +1,74 @@
+{
+    "sourceFile": "src/Entity/traits/Timestampable.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 14,
+            "patches": [
+                {
+                    "date": 1690425496147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690425503777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-php\n\\ No newline at end of file\n+<?\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690425509339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-<?\n\\ No newline at end of file\n+<?php ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690425552512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,4 @@\n-<?php ?>\n\\ No newline at end of file\n+<?php \n+\n+    \n+?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690425562403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n <?php \n \n-    \n+    namespace\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690425568672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n <?php \n \n-    namespace\n+    namespace App\\Entity\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690425595219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n <?php \n \n-    namespace App\\Entity\n+    namespace App\\Entity\\Traits;\n+\n+    \n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690425603037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php \n \n     namespace App\\Entity\\Traits;\n \n-    \n+    trait\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690425609027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php \n \n     namespace App\\Entity\\Traits;\n \n-    trait\n+    trait Times\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690425614641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php \n \n     namespace App\\Entity\\Traits;\n \n-    trait Times\n+    trait Timesta\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690425623041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php \n \n     namespace App\\Entity\\Traits;\n \n-    trait Timesta\n+    trait Timestampable\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690425629607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php \n \n     namespace App\\Entity\\Traits;\n \n-    trait Timestampable\n+    trait Timestampable()\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690425639543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,40 @@\n <?php \n \n     namespace App\\Entity\\Traits;\n \n-    trait Timestampable()\n+    trait Timestampable{\n+        public function getCreatedAt(): ?\\DateTimeInterface\n+        {\n+            return $this->createdAt;\n+        }\n+    \n+        public function setCreatedAt(\\DateTimeInterface $createdAt): static\n+        {\n+            $this->createdAt = $createdAt;\n+    \n+            return $this;\n+        }\n+    \n+        public function getUpdatedAt(): ?\\DateTimeInterface\n+        {\n+            return $this->updatedAt;\n+        }\n+    \n+        public function setUpdatedAt(\\DateTimeInterface $updatedAt): static\n+        {\n+            $this->updatedAt = $updatedAt;\n+    \n+            return $this;\n+        }\n+        \n+        #[ORM\\PrePersist]\n+        #[ORM\\PreUpdate]\n+        public function updateTimesTamps()\n+        {   \n+            if($this->getCreatedAt() === null){\n+                $this->setCreatedAt(new \\DateTimeImmutable);\n+            }\n+            $this->setUpdatedAt(new \\DateTimeImmutable);\n+        }\n+    }\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690425670945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,14 @@\n \n     namespace App\\Entity\\Traits;\n \n     trait Timestampable{\n+\n+        #[ORM\\Column(type: Types::DATETIME_MUTABLE)]\n+        private ?\\DateTimeInterface $createdAt = null;\n+    \n+        #[ORM\\Column(type: Types::DATETIME_MUTABLE)]\n+        private ?\\DateTimeInterface $updatedAt = null;\n         public function getCreatedAt(): ?\\DateTimeInterface\n         {\n             return $this->createdAt;\n         }\n"
+                },
+                {
+                    "date": 1690425707830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,13 @@\n <?php \n \n     namespace App\\Entity\\Traits;\n \n+use Doctrine\\DBAL\\Types\\Type;\n+\n     trait Timestampable{\n \n-        #[ORM\\Column(type: Types::DATETIME_MUTABLE)]\n+        #[ORM\\Column(type: Typepes::DATETIME_MUTABLE)]\n         private ?\\DateTimeInterface $createdAt = null;\n     \n         #[ORM\\Column(type: Types::DATETIME_MUTABLE)]\n         private ?\\DateTimeInterface $updatedAt = null;\n"
+                }
+            ],
+            "date": 1690425496147,
+            "name": "Commit-0",
+            "content": "php"
+        }
+    ]
+}

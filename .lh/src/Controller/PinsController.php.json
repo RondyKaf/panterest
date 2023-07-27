@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 51,
+            "activePatchIndex": 69,
             "patches": [
                 {
                     "date": 1690414734481,
@@ -212,6 +212,78 @@
                 {
                     "date": 1690425039049,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n {\n     #[Route('/', name: 'app_home')]\n     public function index(PinRepository $pinRepository): Response\n     {\n-        $pins = $pinRepository->findBy([],['createdAt'=>]); \n+        $pins = $pinRepository->findBy([],['createdAt'=>\"DESC\"]); \n         return $this->render('pins/index.html.twig',compact('pins'));\n     }\n \n     #[Route('/pins/{id<[0-9]+>}', name: 'app_pins_show')]\n"
+                },
+                {
+                    "date": 1690425988356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,16 @@\n         $pins = $pinRepository->findBy([],['createdAt'=>\"DESC\"]); \n         return $this->render('pins/index.html.twig',compact('pins'));\n     }\n \n+    #[Route('/', name: 'app_home')]\n+    public function index(PinRepository $pinRepository): Response\n+    {\n+        $pins = $pinRepository->findBy([],['createdAt'=>\"DESC\"]); \n+        return $this->render('pins/index.html.twig',compact('pins'));\n+    }\n+\n+\n     #[Route('/pins/{id<[0-9]+>}', name: 'app_pins_show')]\n     public function show(Pin $pin): Response\n     {\n         return $this->render('pins/show.html.twig',compact('pin'));\n"
+                },
+                {
+                    "date": 1690425996497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n         $pins = $pinRepository->findBy([],['createdAt'=>\"DESC\"]); \n         return $this->render('pins/index.html.twig',compact('pins'));\n     }\n \n-    #[Route('/', name: 'app_home')]\n+    #[Route('/', name: 'app_pin_create')]\n     public function index(PinRepository $pinRepository): Response\n     {\n         $pins = $pinRepository->findBy([],['createdAt'=>\"DESC\"]); \n         return $this->render('pins/index.html.twig',compact('pins'));\n"
+                },
+                {
+                    "date": 1690426002192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         return $this->render('pins/index.html.twig',compact('pins'));\n     }\n \n     #[Route('/', name: 'app_pin_create')]\n-    public function index(PinRepository $pinRepository): Response\n+    public function create(PinRepository $pinRepository): Response\n     {\n         $pins = $pinRepository->findBy([],['createdAt'=>\"DESC\"]); \n         return $this->render('pins/index.html.twig',compact('pins'));\n     }\n"
+                },
+                {
+                    "date": 1690426011981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,10 @@\n \n     #[Route('/', name: 'app_pin_create')]\n     public function create(PinRepository $pinRepository): Response\n     {\n-        $pins = $pinRepository->findBy([],['createdAt'=>\"DESC\"]); \n-        return $this->render('pins/index.html.twig',compact('pins'));\n+       \n+        return $this->render('pins/index.html.twig');\n     }\n \n \n     #[Route('/pins/{id<[0-9]+>}', name: 'app_pins_show')]\n"
+                },
+                {
+                    "date": 1690426026487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     #[Route('/', name: 'app_pin_create')]\n     public function create(PinRepository $pinRepository): Response\n     {\n        \n-        return $this->render('pins/index.html.twig');\n+        return $this->render('pins/create.html.twig');\n     }\n \n \n     #[Route('/pins/{id<[0-9]+>}', name: 'app_pins_show')]\n"
+                },
+                {
+                    "date": 1690426038206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n \n     #[Route('/', name: 'app_pin_create')]\n     public function create(PinRepository $pinRepository): Response\n     {\n-       \n+       form \n         return $this->render('pins/create.html.twig');\n     }\n \n \n"
+                },
+                {
+                    "date": 1690426045898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n \n     #[Route('/', name: 'app_pin_create')]\n     public function create(PinRepository $pinRepository): Response\n     {\n-       form \n+       form buil\n         return $this->render('pins/create.html.twig');\n     }\n \n \n"
+                },
+                {
+                    "date": 1690426062198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n \n     #[Route('/', name: 'app_pin_create')]\n     public function create(PinRepository $pinRepository): Response\n     {\n-       form buil\n+       form builder->\n         return $this->render('pins/create.html.twig');\n     }\n \n \n"
+                },
+                {
+                    "date": 1690426088893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n \n     #[Route('/', name: 'app_pin_create')]\n     public function create(PinRepository $pinRepository): Response\n     {\n-       form builder->\n+       $this->\n         return $this->render('pins/create.html.twig');\n     }\n \n \n"
+                },
+                {
+                    "date": 1690426101603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,10 @@\n \n     #[Route('/', name: 'app_pin_create')]\n     public function create(PinRepository $pinRepository): Response\n     {\n-       $this->\n+       $this->createFormBuilder()\n+            ->add()\n         return $this->render('pins/create.html.twig');\n     }\n \n \n"
+                },
+                {
+                    "date": 1690426107351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n     public function create(PinRepository $pinRepository): Response\n     {\n        $this->createFormBuilder()\n             ->add()\n+        ;\n         return $this->render('pins/create.html.twig');\n     }\n \n \n"
+                },
+                {
+                    "date": 1690426131458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     #[Route('/', name: 'app_pin_create')]\n     public function create(PinRepository $pinRepository): Response\n     {\n        $this->createFormBuilder()\n-            ->add()\n+            ->add(title)\n         ;\n         return $this->render('pins/create.html.twig');\n     }\n \n"
+                },
+                {
+                    "date": 1690426139296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n     public function create(PinRepository $pinRepository): Response\n     {\n        $this->createFormBuilder()\n             ->add(title)\n+            ->add()\n         ;\n         return $this->render('pins/create.html.twig');\n     }\n \n"
+                },
+                {
+                    "date": 1690426145346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     #[Route('/', name: 'app_pin_create')]\n     public function create(PinRepository $pinRepository): Response\n     {\n        $this->createFormBuilder()\n-            ->add(title)\n+            ->add('title')\n             ->add()\n         ;\n         return $this->render('pins/create.html.twig');\n     }\n"
+                },
+                {
+                    "date": 1690426154320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     public function create(PinRepository $pinRepository): Response\n     {\n        $this->createFormBuilder()\n             ->add('title')\n-            ->add()\n+            ->add('descriptio')\n         ;\n         return $this->render('pins/create.html.twig');\n     }\n \n"
+                },
+                {
+                    "date": 1690426161185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,10 @@\n     public function create(PinRepository $pinRepository): Response\n     {\n        $this->createFormBuilder()\n             ->add('title')\n-            ->add('descriptio')\n+            ->add('description')\n+            \n         ;\n         return $this->render('pins/create.html.twig');\n     }\n \n"
+                },
+                {
+                    "date": 1690426166494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     {\n        $this->createFormBuilder()\n             ->add('title')\n             ->add('description')\n-            get->\n+            get->g\n         ;\n         return $this->render('pins/create.html.twig');\n     }\n \n"
+                },
+                {
+                    "date": 1690427222540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n             ->add('title',TextType::class)\n             ->add('description',TextareaType::class)\n             ->getForm()\n         ;\n-        \n+        $\n \n         return $this->render('pins/create.html.twig',[\"formulaire\"=>$form->createView()]);\n     }\n \n"
                 }
             ],
             "date": 1690414734481,

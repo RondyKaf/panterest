@@ -1,0 +1,42 @@
+{
+    "sourceFile": "templates/pins/edit.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1690429382078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690429930754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,9 @@\n {% extends 'base.html.twig' %}\n \n-{% block title \"New Pin\" %}\n+{% block title \"E Pin\" %}\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n-    {{ form_start(formulaire) }}\n-        {{ form_widget(formulaire) }}\n-        <input type=\"submit\" value=\"Create Pin\">\n-    {{ form_end(formulaire)}}\n+    \n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690429949990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title \"E Pin\" %}\n+{% block title \"Edit Pin\"  %}\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n"
+                },
+                {
+                    "date": 1690430014305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title \"Edit Pin\"  %}\n+{% block title \"Edit Pin#' ~ pin. id %}\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n"
+                },
+                {
+                    "date": 1690430022186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title \"Edit Pin#' ~ pin. id %}\n+{% block title \"Edit Pin#\" ~ pin.id %}\n \n {% block body %}\n     <h1>Create Pin</h1>\n \n"
+                },
+                {
+                    "date": 1690430089345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,8 @@\n \n {% block title \"Edit Pin#\" ~ pin.id %}\n \n {% block body %}\n-    <h1>Create Pin</h1>\n+    <h1>Edit Pin</h1>\n \n     \n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690430095112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,8 @@\n \n {% block title \"Edit Pin#\" ~ pin.id %}\n \n {% block body %}\n-    <h1>Edit Pin {{pin.id</h1>\n+    <h1>Edit Pin {{pin.id}</h1>\n \n     \n {% endblock %}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1690429382078,
+            "name": "Commit-0",
+            "content": "{% extends 'base.html.twig' %}\n\n{% block title \"New Pin\" %}\n\n{% block body %}\n    <h1>Create Pin</h1>\n\n    {{ form_start(formulaire) }}\n        {{ form_widget(formulaire) }}\n        <input type=\"submit\" value=\"Create Pin\">\n    {{ form_end(formulaire)}}\n{% endblock %}"
+        }
+    ]
+}

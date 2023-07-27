@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 53,
+            "activePatchIndex": 60,
             "patches": [
                 {
                     "date": 1690414806185,
@@ -220,6 +220,34 @@
                 {
                     "date": 1690420489070,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2><a href=\"{{ path('app_pins_show',{\"id\":pin.}) }}\"></a>{{ pin.title }}</h2> \n+        <h2><a href=\"{{ path('app_pins_show',{\"id\":pin.id}) }}\"></a></h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690431820902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2><a href=\"{{ path('app_pins_show',{\"id\":pin.id}) }}\"></a></h2> \n+        <h2><a href=\"{{ path('app_pins_show', }}\">{{ pin.title }}</a></h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690431841076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2><a href=\"{{ path('app_pins_show', }}\">{{ pin.title }}</a></h2> \n+        <h2><a href=\"{{ path('app_pins_show') }}\">{{ pin.title }}</a></h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690431867004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2><a href=\"{{ path('app_pins_show') }}\">{{ pin.title }}</a></h2> \n+        <h2><a href=\"{{ path('app_pins_show',) }}\">{{ pin.title }}</a></h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690431884619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title\"Find all best pins\" %}\n+{% block title \"Find all best pins\" %}\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n"
+                },
+                {
+                    "date": 1690449280665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2><a href=\"{{ path('app_pins_show',) }}\">{{ pin.title }}</a></h2> \n+        <h2><a href=\"{{ path('app_pins_show',{}) }}\">{{ pin.title }}</a></h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690449286568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2><a href=\"{{ path('app_pins_show',{}) }}\">{{ pin.title }}</a></h2> \n+        <h2><a href=\"{{ path('app_pins_show',{'id'}) }}\">{{ pin.title }}</a></h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690449291789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2><a href=\"{{ path('app_pins_show',{'id'}) }}\">{{ pin.title }}</a></h2> \n+        <h2><a href=\"{{ path('app_pins_show',{'id':pin.id}) }}\">{{ pin.title }}</a></h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
                 }
             ],
             "date": 1690414806185,

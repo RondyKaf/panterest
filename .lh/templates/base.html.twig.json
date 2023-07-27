@@ -1,0 +1,90 @@
+{
+    "sourceFile": "templates/base.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 18,
+            "patches": [
+                {
+                    "date": 1690428996265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690429001522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-    \n+    <navbar></navbar>\n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1690429020169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-    <navbar></navbar>\n+    \n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1690429027532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,10 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n+    <nav>\n     \n+    </nav>\n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1690429036705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         {% endblock %}\n     </head>\n     <body>\n     <nav>\n-    \n+        ul\n     </nav>\n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1690429043194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         {% endblock %}\n     </head>\n     <body>\n     <nav>\n-        ul\n+        <ul></ul>\n     </nav>\n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1690429049060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,11 @@\n         {% endblock %}\n     </head>\n     <body>\n     <nav>\n-        <ul></ul>\n+        <ul>\n+        \n+        </ul>\n     </nav>\n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1690429055978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     </head>\n     <body>\n     <nav>\n         <ul>\n-        \n+            <li></li>\n         </ul>\n     </nav>\n         {% block body %}{% endblock %}\n     </body>\n"
+                },
+                {
+                    "date": 1690429068262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     </head>\n     <body>\n     <nav>\n         <ul>\n-            <li></li>\n+            <li><a href=\"\">HO</a></li>\n         </ul>\n     </nav>\n         {% block body %}{% endblock %}\n     </body>\n"
+                },
+                {
+                    "date": 1690429076551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,10 @@\n     </head>\n     <body>\n     <nav>\n         <ul>\n-            <li><a href=\"\">HO</a></li>\n+            <li><a href=\"\">Home</a></li>\n+            li\n         </ul>\n     </nav>\n         {% block body %}{% endblock %}\n     </body>\n"
+                },
+                {
+                    "date": 1690429083487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     <body>\n     <nav>\n         <ul>\n             <li><a href=\"\">Home</a></li>\n-            li\n+            \n         </ul>\n     </nav>\n         {% block body %}{% endblock %}\n     </body>\n"
+                },
+                {
+                    "date": 1690429089109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     <body>\n     <nav>\n         <ul>\n             <li><a href=\"\">Home</a></li>\n-            \n+            <li>a</li>\n         </ul>\n     </nav>\n         {% block body %}{% endblock %}\n     </body>\n"
+                },
+                {
+                    "date": 1690429096251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     <body>\n     <nav>\n         <ul>\n             <li><a href=\"\">Home</a></li>\n-            <li>a</li>\n+            <li><a href=\"\">New </a></li>\n         </ul>\n     </nav>\n         {% block body %}{% endblock %}\n     </body>\n"
+                },
+                {
+                    "date": 1690429109804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n     </head>\n     <body>\n     <nav>\n         <ul>\n-            <li><a href=\"\">Home</a></li>\n-            <li><a href=\"\">New </a></li>\n+            <li><a href=\"{{ }}\">Home</a></li>\n+            <li><a href=\"\">New Pin</a></li>\n         </ul>\n     </nav>\n         {% block body %}{% endblock %}\n     </body>\n"
+                },
+                {
+                    "date": 1690429121847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     </head>\n     <body>\n     <nav>\n         <ul>\n-            <li><a href=\"{{ }}\">Home</a></li>\n+            <li><a href=\"{{ path('app)}}\">Home</a></li>\n             <li><a href=\"\">New Pin</a></li>\n         </ul>\n     </nav>\n         {% block body %}{% endblock %}\n"
+                },
+                {
+                    "date": 1690429129865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n     </head>\n     <body>\n     <nav>\n         <ul>\n-            <li><a href=\"{{ path('app)}}\">Home</a></li>\n-            <li><a href=\"\">New Pin</a></li>\n+            <li><a href=\"{{ path('app_home')}}\">Home</a></li>\n+            <li><a href=\"{{}}\">New Pin</a></li>\n         </ul>\n     </nav>\n         {% block body %}{% endblock %}\n     </body>\n"
+                },
+                {
+                    "date": 1690429137936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     <body>\n     <nav>\n         <ul>\n             <li><a href=\"{{ path('app_home')}}\">Home</a></li>\n-            <li><a href=\"{{}}\">New Pin</a></li>\n+            <li><a href=\"{{ path()}}\">New Pin</a></li>\n         </ul>\n     </nav>\n         {% block body %}{% endblock %}\n     </body>\n"
+                },
+                {
+                    "date": 1690429146246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     <body>\n     <nav>\n         <ul>\n             <li><a href=\"{{ path('app_home')}}\">Home</a></li>\n-            <li><a href=\"{{ path()}}\">New Pin</a></li>\n+            <li><a href=\"{{ path('app_pins_create)}}\">New Pin</a></li>\n         </ul>\n     </nav>\n         {% block body %}{% endblock %}\n     </body>\n"
+                },
+                {
+                    "date": 1690429152759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     <body>\n     <nav>\n         <ul>\n             <li><a href=\"{{ path('app_home')}}\">Home</a></li>\n-            <li><a href=\"{{ path('app_pins_create)}}\">New Pin</a></li>\n+            <li><a href=\"{{ path('app_pins_create') }}\">New Pin</a></li>\n         </ul>\n     </nav>\n         {% block body %}{% endblock %}\n     </body>\n"
+                }
+            ],
+            "date": 1690428996265,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\">\n        <title>{% block title %}Welcome!{% endblock %}</title>\n        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">\n        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}\n        {% block stylesheets %}\n            {{ encore_entry_link_tags('app') }}\n        {% endblock %}\n\n        {% block javascripts %}\n            {{ encore_entry_script_tags('app') }}\n        {% endblock %}\n    </head>\n    <body>\n    \n        {% block body %}{% endblock %}\n    </body>\n</html>\n"
+        }
+    ]
+}

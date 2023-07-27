@@ -1,0 +1,198 @@
+{
+    "sourceFile": "src/Form/PinType.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 45,
+            "patches": [
+                {
+                    "date": 1690452001397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690452007131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-<\n\\ No newline at end of file\n+<?php\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452013469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-<?php\n\\ No newline at end of file\n+<?php\n+\n+ju\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452023883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n <?php\n \n-ju\n\\ No newline at end of file\n+use App\\Entity\\Pin\n"
+                },
+                {
+                    "date": 1690452029327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n <?php\n \n use App\\Entity\\Pin\n+use \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452040513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,3 @@\n <?php\n \n use App\\Entity\\Pin\n-use \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452047170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,6 @@\n <?php\n \n-use App\\Entity\\Pin\n+use App\\Entity\\Pin;\n+use Symfony\\ Component \\ Form\\AbstractType;\n+use Symfony\\ Component\\ Form\\ FormBuilderInterface;\n+use Symfony\\ Component \\OptionsResolver\\ptionsResolver;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452052852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php\n \n use App\\Entity\\Pin;\n-use Symfony\\ Component \\ Form\\AbstractType;\n+use Symfony\\ Component\\ Form\\AbstractType;\n use Symfony\\ Component\\ Form\\ FormBuilderInterface;\n\\ No newline at end of file\n-use Symfony\\ Component \\OptionsResolver\\ptionsResolver;\n+use Symfony\\ Component \\OptionsResolver\\OptionsResolver;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452069612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php\n \n use App\\Entity\\Pin;\n-use Symfony\\ Component\\ Form\\AbstractType;\n-use Symfony\\ Component\\ Form\\ FormBuilderInterface;\n+use Symfony\\ Component\\Form\\AbstractType;\n+use Symfony\\ Component\\Form\\ FormBuilderInterface;\n use Symfony\\ Component \\OptionsResolver\\OptionsResolver;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452075234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php\n \n use App\\Entity\\Pin;\n-use Symfony\\ Component\\Form\\AbstractType;\n-use Symfony\\ Component\\Form\\ FormBuilderInterface;\n+use Symfony\\Component\\Form\\AbstractType;\n+use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\ Component \\OptionsResolver\\OptionsResolver;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452080530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,5 @@\n \n use App\\Entity\\Pin;\n use Symfony\\Component\\Form\\AbstractType;\n use Symfony\\Component\\Form\\FormBuilderInterface;\n-use Symfony\\ Component \\OptionsResolver\\OptionsResolver;\n\\ No newline at end of file\n+use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452088563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,7 @@\n \n use App\\Entity\\Pin;\n use Symfony\\Component\\Form\\AbstractType;\n use Symfony\\Component\\Form\\FormBuilderInterface;\n-use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n\\ No newline at end of file\n+use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n+\n+class \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452098805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,5 @@\n use Symfony\\Component\\Form\\AbstractType;\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n \n-class \n\\ No newline at end of file\n+class T\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452105317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,5 @@\n use Symfony\\Component\\Form\\AbstractType;\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n \n-class T\n\\ No newline at end of file\n+class TinT\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452161896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,5 @@\n use Symfony\\Component\\Form\\AbstractType;\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n \n-class TinT\n\\ No newline at end of file\n+class TinType  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452167595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,5 @@\n use Symfony\\Component\\Form\\AbstractType;\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n \n-class TinType  \n\\ No newline at end of file\n+class TinType extends \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452172971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,7 @@\n use Symfony\\Component\\Form\\AbstractType;\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n \n-class TinType extends \n\\ No newline at end of file\n+class TinType extends AbstractType{\n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452180850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n \n class TinType extends AbstractType{\n-    \n+    public function\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452186393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n \n class TinType extends AbstractType{\n-    public function\n+    public function buildForm(FormBuilderInterface , )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452194181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n \n class TinType extends AbstractType{\n-    public function buildForm(FormBuilderInterface , )\n+    public function buildForm(FormBuilderInterface $bluider, )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452203188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n \n class TinType extends AbstractType{\n-    public function buildForm(FormBuilderInterface $bluider, )\n+    public function buildForm(FormBuilderInterface $bluider,array $option)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452251922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,8 @@\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n \n class TinType extends AbstractType{\n-    public function buildForm(FormBuilderInterface $bluider,array $option)\n+    public function buildForm(FormBuilderInterface $bluider,array $option){\n+        \n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452257837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n \n class TinType extends AbstractType{\n     public function buildForm(FormBuilderInterface $bluider,array $option){\n-        \n+        $bluider\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452264112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,7 @@\n \n class TinType extends AbstractType{\n     public function buildForm(FormBuilderInterface $bluider,array $option){\n         $bluider\n+            ->add()\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452269265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n \n class TinType extends AbstractType{\n     public function buildForm(FormBuilderInterface $bluider,array $option){\n         $bluider\n-            ->add()\n+            ->add('title')\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452280553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,7 @@\n class TinType extends AbstractType{\n     public function buildForm(FormBuilderInterface $bluider,array $option){\n         $bluider\n             ->add('title')\n+            ->add('description')\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452315781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,7 @@\n     public function buildForm(FormBuilderInterface $bluider,array $option){\n         $bluider\n             ->add('title')\n             ->add('description')\n+        ;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452324762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,6 @@\n             ->add('title')\n             ->add('description')\n         ;\n     }\n+    public function \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452330834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,6 @@\n             ->add('title')\n             ->add('description')\n         ;\n     }\n-    public function \n+    public function configureOptions(OptionsResolver )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452336943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,6 @@\n             ->add('title')\n             ->add('description')\n         ;\n     }\n-    public function configureOptions(OptionsResolver )\n+    public function configureOptions(OptionsResolver $reso)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452347717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,8 @@\n             ->add('title')\n             ->add('description')\n         ;\n     }\n-    public function configureOptions(OptionsResolver $reso)\n+    public function configureOptions(OptionsResolver $resolver){\n+        $resolver\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452353229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,7 @@\n             ->add('description')\n         ;\n     }\n     public function configureOptions(OptionsResolver $resolver){\n-        $resolver\n+        $resolver->set\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452365650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,9 @@\n             ->add('description')\n         ;\n     }\n     public function configureOptions(OptionsResolver $resolver){\n-        $resolver->set\n+        $resolver->setDefault(\n+            'data'=>\n+        );\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452371491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n         ;\n     }\n     public function configureOptions(OptionsResolver $resolver){\n         $resolver->setDefault(\n-            'data'=>\n+            'data'=> Pin::class;\n         );\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452382157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n         ;\n     }\n     public function configureOptions(OptionsResolver $resolver){\n         $resolver->setDefault(\n-            'data'=> Pin::class;\n+            'data_class'=> Pin::class\n         );\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452391443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n         ;\n     }\n     public function configureOptions(OptionsResolver $resolver){\n         $resolver->setDefault(\n-            'data_class'=> Pin::class\n+            []'data_class'=> Pin::class\n         );\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452396867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n         ;\n     }\n     public function configureOptions(OptionsResolver $resolver){\n         $resolver->setDefault(\n-            []'data_class'=> Pin::class\n+            ['data_class'=> Pin::class]\n         );\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452406849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n             ->add('description')\n         ;\n     }\n     public function configureOptions(OptionsResolver $resolver){\n-        $resolver->setDefault(\n+        $resolver->setDefaults(\n             ['data_class'=> Pin::class]\n         );\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690452480121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n use Symfony\\Component\\Form\\AbstractType;\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n \n-class TinType extends AbstractType{\n+class PinType extends AbstractType{\n     public function buildForm(FormBuilderInterface $bluider,array $option){\n         $bluider\n             ->add('title')\n             ->add('description')\n"
+                },
+                {
+                    "date": 1690454132388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <?php\n \n+\n use App\\Entity\\Pin;\n use Symfony\\Component\\Form\\AbstractType;\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n"
+                },
+                {
+                    "date": 1690454140545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <?php\n \n-\n+namespace\n use App\\Entity\\Pin;\n use Symfony\\Component\\Form\\AbstractType;\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n"
+                },
+                {
+                    "date": 1690454146281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <?php\n \n-namespace\n+namespace App\n use App\\Entity\\Pin;\n use Symfony\\Component\\Form\\AbstractType;\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n"
+                },
+                {
+                    "date": 1690454153243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <?php\n \n-namespace App\n+namespace App\\Controller\n use App\\Entity\\Pin;\n use Symfony\\Component\\Form\\AbstractType;\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n"
+                },
+                {
+                    "date": 1690454159946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <?php\n \n-namespace App\\Controller\n+namespace App\\Entity\n use App\\Entity\\Pin;\n use Symfony\\Component\\Form\\AbstractType;\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n"
+                },
+                {
+                    "date": 1690454167402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <?php\n \n-namespace App\\Entity\n+namespace App\\Entity\\Pin;\n use App\\Entity\\Pin;\n use Symfony\\Component\\Form\\AbstractType;\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n"
+                },
+                {
+                    "date": 1690454297188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n <?php\n \n-namespace App\\Entity\\Pin;\n use App\\Entity\\Pin;\n use Symfony\\Component\\Form\\AbstractType;\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n"
+                }
+            ],
+            "date": 1690452001397,
+            "name": "Commit-0",
+            "content": "<"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title "New Pin" %}
+
+{% block body %}
+    <h1>Create Pin</h1>
+
+    {{ form_start(formulaire, {'method': 'GET','}) }}
+        {{ form_widget(formulaire) }}
+        <input type="submit" value="Create Pin" formnovalidate>
+    {{ form_end(formulaire)}}
+{% endblock %}
