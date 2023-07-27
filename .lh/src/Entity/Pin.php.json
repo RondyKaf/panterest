@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 33,
             "patches": [
                 {
                     "date": 1690415993416,
@@ -24,6 +24,122 @@
                 {
                     "date": 1690420279788,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,7 @@\n \n     public function setDescription(string $description): static\n     {\n         $this->description = $description;\n-\n         return $this;\n     }\n }\n"
+                },
+                {
+                    "date": 1690421767628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n use Doctrine\\DBAL\\Types\\Types;\n use Doctrine\\ORM\\Mapping as ORM;\n \n #[ORM\\Entity(repositoryClass: PinRepository::class)]\n-#[ORM\\Table(name:\"pins\")]\n+#[ORM\\Table(name:\"pins\")]@ORM\\HasLifecycleCallbacks\n class Pin\n {\n     #[ORM\\Id]\n     #[ORM\\GeneratedValue]\n@@ -20,8 +20,14 @@\n \n     #[ORM\\Column(type: Types::TEXT)]\n     private ?string $description = null;\n \n+    #[ORM\\Column(type: Types::DATETIME_MUTABLE)]\n+    private ?\\DateTimeInterface $createdAt = null;\n+\n+    #[ORM\\Column(type: Types::DATETIME_MUTABLE)]\n+    private ?\\DateTimeInterface $updatedAt = null;\n+\n     public function getId(): ?int\n     {\n         return $this->id;\n     }\n@@ -47,5 +53,29 @@\n     {\n         $this->description = $description;\n         return $this;\n     }\n+\n+    public function getCreatedAt(): ?\\DateTimeInterface\n+    {\n+        return $this->createdAt;\n+    }\n+\n+    public function setCreatedAt(\\DateTimeInterface $createdAt): static\n+    {\n+        $this->createdAt = $createdAt;\n+\n+        return $this;\n+    }\n+\n+    public function getUpdatedAt(): ?\\DateTimeInterface\n+    {\n+        return $this->updatedAt;\n+    }\n+\n+    public function setUpdatedAt(\\DateTimeInterface $updatedAt): static\n+    {\n+        $this->updatedAt = $updatedAt;\n+\n+        return $this;\n+    }\n }\n"
+                },
+                {
+                    "date": 1690421774198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,10 @@\n use Doctrine\\DBAL\\Types\\Types;\n use Doctrine\\ORM\\Mapping as ORM;\n \n #[ORM\\Entity(repositoryClass: PinRepository::class)]\n-#[ORM\\Table(name:\"pins\")]@ORM\\HasLifecycleCallbacks\n+#[ORM\\Table(name:\"pins\")]\n+#[]\n class Pin\n {\n     #[ORM\\Id]\n     #[ORM\\GeneratedValue]\n"
+                },
+                {
+                    "date": 1690421812018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n use Doctrine\\ORM\\Mapping as ORM;\n \n #[ORM\\Entity(repositoryClass: PinRepository::class)]\n #[ORM\\Table(name:\"pins\")]\n-#[]\n+#[ORM\\HasLifecycleCallbacks]\n class Pin\n {\n     #[ORM\\Id]\n     #[ORM\\GeneratedValue]\n@@ -78,5 +78,7 @@\n         $this->updatedAt = $updatedAt;\n \n         return $this;\n     }\n+    \n+    public function \n }\n"
+                },
+                {
+                    "date": 1690421831559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,6 +79,6 @@\n \n         return $this;\n     }\n     \n-    public function \n+    public function updateTime\n }\n"
+                },
+                {
+                    "date": 1690421839901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,6 +79,7 @@\n \n         return $this;\n     }\n     \n-    public function updateTime\n+    public function updateTimesTam()\n+    \n }\n"
+                },
+                {
+                    "date": 1690421853091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,7 +79,9 @@\n \n         return $this;\n     }\n     \n-    public function updateTimesTam()\n-    \n+    public function updateTimesTamps()\n+    {\n+\n+    }\n }\n"
+                },
+                {
+                    "date": 1690421881783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,8 +79,9 @@\n \n         return $this;\n     }\n     \n+    \n     public function updateTimesTamps()\n     {\n \n     }\n"
+                },
+                {
+                    "date": 1690421888409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,9 +79,9 @@\n \n         return $this;\n     }\n     \n-    \n+    #[ORM]\n     public function updateTimesTamps()\n     {\n \n     }\n"
+                },
+                {
+                    "date": 1690421893892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,9 +79,10 @@\n \n         return $this;\n     }\n     \n-    #[ORM]\n+    #[ORM\\PrePersist]\n+    \n     public function updateTimesTamps()\n     {\n \n     }\n"
+                },
+                {
+                    "date": 1690421900154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,9 +80,9 @@\n         return $this;\n     }\n     \n     #[ORM\\PrePersist]\n-    \n+    #[ORM\\]\n     public function updateTimesTamps()\n     {\n \n     }\n"
+                },
+                {
+                    "date": 1690421906330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,9 +80,9 @@\n         return $this;\n     }\n     \n     #[ORM\\PrePersist]\n-    #[ORM\\]\n+    #[ORM\\PreUpdate]\n     public function updateTimesTamps()\n     {\n \n     }\n"
+                },
+                {
+                    "date": 1690421932366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,7 +83,7 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesTamps()\n     {\n-\n+        $this->createdAt\n     }\n }\n"
+                },
+                {
+                    "date": 1690421953606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,7 +83,7 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesTamps()\n     {\n-        $this->createdAt\n+        $this->createdAt(new )\n     }\n }\n"
+                },
+                {
+                    "date": 1690421961482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,7 +83,7 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesTamps()\n     {\n-        $this->createdAt(new )\n+        $this->createdAt(new \\t)\n     }\n }\n"
+                },
+                {
+                    "date": 1690421968278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,7 +83,7 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesTamps()\n     {\n-        $this->createdAt(new \\t)\n+        $this->createdAt(new \\DateTimeImmutable)\n     }\n }\n"
+                },
+                {
+                    "date": 1690421974149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,7 +83,8 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesTamps()\n     {\n-        $this->createdAt(new \\DateTimeImmutable)\n+        $this->createdAt(new \\DateTimeImmutable);\n+        $this->cre\n     }\n }\n"
+                },
+                {
+                    "date": 1690421984134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,7 +84,7 @@\n     #[ORM\\PreUpdate]\n     public function updateTimesTamps()\n     {\n         $this->createdAt(new \\DateTimeImmutable);\n-        $this->cre\n+        $this->setU\n     }\n }\n"
+                },
+                {
+                    "date": 1690421989700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,7 +84,7 @@\n     #[ORM\\PreUpdate]\n     public function updateTimesTamps()\n     {\n         $this->createdAt(new \\DateTimeImmutable);\n-        $this->setU\n+        $this->setUp\n     }\n }\n"
+                },
+                {
+                    "date": 1690422011733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,7 +84,7 @@\n     #[ORM\\PreUpdate]\n     public function updateTimesTamps()\n     {\n         $this->createdAt(new \\DateTimeImmutable);\n-        $this->setUp\n+        $this->setUpdatedAt(new );\n     }\n }\n"
+                },
+                {
+                    "date": 1690422019755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,7 +84,7 @@\n     #[ORM\\PreUpdate]\n     public function updateTimesTamps()\n     {\n         $this->createdAt(new \\DateTimeImmutable);\n-        $this->setUpdatedAt(new );\n+        $this->setUpdatedAt(new \\DateTimeImmutable);\n     }\n }\n"
+                },
+                {
+                    "date": 1690422037150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,8 +83,8 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesTamps()\n     {\n-        $this->createdAt(new \\DateTimeImmutable);\n+        $this->setCcreatedAt(new \\DateTimeImmutable);\n         $this->setUpdatedAt(new \\DateTimeImmutable);\n     }\n }\n"
+                },
+                {
+                    "date": 1690422358899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,10 @@\n     \n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesTamps()\n-    {\n-        $this->setCcreatedAt(new \\DateTimeImmutable);\n+    {   \n+        \n+        $this->setCreatedAt(new \\DateTimeImmutable);\n         $this->setUpdatedAt(new \\DateTimeImmutable);\n     }\n }\n"
+                },
+                {
+                    "date": 1690422365904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesTamps()\n     {   \n-        \n+        if()\n         $this->setCreatedAt(new \\DateTimeImmutable);\n         $this->setUpdatedAt(new \\DateTimeImmutable);\n     }\n }\n"
+                },
+                {
+                    "date": 1690422370988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesTamps()\n     {   \n-        if()\n+        if($this->get)\n         $this->setCreatedAt(new \\DateTimeImmutable);\n         $this->setUpdatedAt(new \\DateTimeImmutable);\n     }\n }\n"
+                },
+                {
+                    "date": 1690422381182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesTamps()\n     {   \n-        if($this->get)\n+        if($this->getCreatedAt() === null)\n         $this->setCreatedAt(new \\DateTimeImmutable);\n         $this->setUpdatedAt(new \\DateTimeImmutable);\n     }\n }\n"
+                },
+                {
+                    "date": 1690422389645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,11 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesTamps()\n     {   \n-        if($this->getCreatedAt() === null)\n+        if($this->getCreatedAt() === null){\n         $this->setCreatedAt(new \\DateTimeImmutable);\n+\n+        }\n         $this->setUpdatedAt(new \\DateTimeImmutable);\n     }\n }\n"
+                },
+                {
+                    "date": 1690423602320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n \n     #[ORM\\Column(type: Types::DATETIME_MUTABLE)]\n     private ?\\DateTimeInterface $createdAt = null;\n \n-    #[ORM\\Column(type: Types::DATETIME_MUTABLE)]\n+    #[ORM\\Column(type: Types::DATETIME_MUTABLE,op)]\n     private ?\\DateTimeInterface $updatedAt = null;\n \n     public function getId(): ?int\n     {\n@@ -84,10 +84,9 @@\n     #[ORM\\PreUpdate]\n     public function updateTimesTamps()\n     {   \n         if($this->getCreatedAt() === null){\n-        $this->setCreatedAt(new \\DateTimeImmutable);\n-\n+            $this->setCreatedAt(new \\DateTimeImmutable);\n         }\n         $this->setUpdatedAt(new \\DateTimeImmutable);\n     }\n }\n"
+                },
+                {
+                    "date": 1690423612649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,9 @@\n \n     #[ORM\\Column(type: Types::DATETIME_MUTABLE)]\n     private ?\\DateTimeInterface $createdAt = null;\n \n-    #[ORM\\Column(type: Types::DATETIME_MUTABLE,options\n-    )]\n+    #[ORM\\Column(type: Types::DATETIME_MUTABLE,options)]\n     private ?\\DateTimeInterface $updatedAt = null;\n \n     public function getId(): ?int\n     {\n"
+                },
+                {
+                    "date": 1690424083633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n \n     #[ORM\\Column(type: Types::TEXT)]\n     private ?string $description = null;\n \n-    #[ORM\\Column(type: Types::DATETIME_MUTABLE, options:{})]\n+    #[ORM\\Column(type: Types::DATETIME_MUTABLE, options:{\"default\":\"CURRENT_TIMESTAMP\"})]\n     private ?\\DateTimeInterface $createdAt = null;\n \n     #[ORM\\Column(type: Types::DATETIME_MUTABLE)]\n     private ?\\DateTimeInterface $updatedAt = null;\n"
                 }
             ],
             "date": 1690415993416,

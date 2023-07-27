@@ -25,7 +25,7 @@ class Pin
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     private ?\DateTimeInterface $createdAt = null;
 
-    #[ORM\Column(type: Types::DATETIME_MUTABLE)]
+    #[ORM\Column(type: Types::DATETIME_MUTABLE,options:{"default":()})]
     private ?\DateTimeInterface $updatedAt = null;
 
     public function getId(): ?int

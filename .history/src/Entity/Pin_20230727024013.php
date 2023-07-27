@@ -83,10 +83,8 @@ class Pin
     #[ORM\PrePersist]
     #[ORM\PreUpdate]
     public function updateTimesTamps()
-    {   
-        if($this->getCreatedAt() === null){
-            $this->setCreatedAt(new \DateTimeImmutable);
-        }
-        $this->setUpdatedAt(new \DateTimeImmutable);
+    {
+        $this->createdAt(new \DateTimeImmutable);
+        $this->setUpdatedAt(new \);
     }
 }

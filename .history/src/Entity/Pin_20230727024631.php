@@ -86,6 +86,7 @@ class Pin
     {   
         if($this->getCreatedAt() === null){
             $this->setCreatedAt(new \DateTimeImmutable);
+
         }
         $this->setUpdatedAt(new \DateTimeImmutable);
     }

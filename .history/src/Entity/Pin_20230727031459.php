@@ -22,10 +22,10 @@ class Pin
     #[ORM\Column(type: Types::TEXT)]
     private ?string $description = null;
 
-    #[ORM\Column(type: Types::DATETIME_MUTABLE)]
+    #[ORM\Column(type: Types::DATETIME_MUTABLE, options:{"default":"CURRENT_TIMESTAMP"})]
     private ?\DateTimeInterface $createdAt = null;
 
-    #[ORM\Column(type: Types::DATETIME_MUTABLE)]
+    #[ORM\Column(type: Types::DATETIME_MUTABLE, options:{"default":"CURRENT_TIMESTAMP")]
     private ?\DateTimeInterface $updatedAt = null;
 
     public function getId(): ?int

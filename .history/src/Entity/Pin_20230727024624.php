@@ -85,8 +85,9 @@ class Pin
     public function updateTimesTamps()
     {   
         if($this->getCreatedAt() === null){
-            $this->setCreatedAt(new \DateTimeImmutable);
+            
         }
+        $this->setCreatedAt(new \DateTimeImmutable);
         $this->setUpdatedAt(new \DateTimeImmutable);
     }
 }

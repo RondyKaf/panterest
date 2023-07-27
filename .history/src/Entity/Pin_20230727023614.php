@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: PinRepository::class)]
 #[ORM\Table(name:"pins")]
-#[ORM\HasLifecycleCallbacks]
+#[]
 class Pin
 {
     #[ORM\Id]
@@ -78,15 +78,5 @@ class Pin
         $this->updatedAt = $updatedAt;
 
         return $this;
-    }
-    
-    #[ORM\PrePersist]
-    #[ORM\PreUpdate]
-    public function updateTimesTamps()
-    {   
-        if($this->getCreatedAt() === null){
-            $this->setCreatedAt(new \DateTimeImmutable);
-        }
-        $this->setUpdatedAt(new \DateTimeImmutable);
     }
 }

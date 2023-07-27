@@ -1,0 +1,38 @@
+{
+    "sourceFile": "migrations/Version20230727014726.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1690422475225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690422482254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n final class Version20230727014726 extends AbstractMigration\n {\n     public function getDescription(): string\n     {\n-        return 'Add ';\n+        return 'Add created';\n     }\n \n     public function up(Schema $schema): void\n     {\n"
+                },
+                {
+                    "date": 1690422490750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n final class Version20230727014726 extends AbstractMigration\n {\n     public function getDescription(): string\n     {\n-        return 'Add created';\n+        return 'Add created_at and ';\n     }\n \n     public function up(Schema $schema): void\n     {\n"
+                },
+                {
+                    "date": 1690422502168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n final class Version20230727014726 extends AbstractMigration\n {\n     public function getDescription(): string\n     {\n-        return 'Add created_at and ';\n+        return 'Add created_at and fields';\n     }\n \n     public function up(Schema $schema): void\n     {\n"
+                },
+                {
+                    "date": 1690422513235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n final class Version20230727014726 extends AbstractMigration\n {\n     public function getDescription(): string\n     {\n-        return 'Add created_at and fields';\n+        return 'Add created_at and fields to pins table';\n     }\n \n     public function up(Schema $schema): void\n     {\n"
+                },
+                {
+                    "date": 1690423035328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n final class Version20230727014726 extends AbstractMigration\n {\n     public function getDescription(): string\n     {\n-        return 'Add created_at and fields to pins table';\n+        return '';\n     }\n \n     public function up(Schema $schema): void\n     {\n"
+                }
+            ],
+            "date": 1690422475225,
+            "name": "Commit-0",
+            "content": "<?php\n\ndeclare(strict_types=1);\n\nnamespace DoctrineMigrations;\n\nuse Doctrine\\DBAL\\Schema\\Schema;\nuse Doctrine\\Migrations\\AbstractMigration;\n\n/**\n * Auto-generated Migration: Please modify to your needs!\n */\nfinal class Version20230727014726 extends AbstractMigration\n{\n    public function getDescription(): string\n    {\n        return 'Add ';\n    }\n\n    public function up(Schema $schema): void\n    {\n        // this up() migration is auto-generated, please modify it to your needs\n        $this->addSql('DROP TABLE pin');\n        $this->addSql('ALTER TABLE pins ADD created_at DATETIME NOT NULL, ADD updated_at DATETIME NOT NULL');\n    }\n\n    public function down(Schema $schema): void\n    {\n        // this down() migration is auto-generated, please modify it to your needs\n        $this->addSql('CREATE TABLE pin (id INT AUTO_INCREMENT NOT NULL, title VARCHAR(255) CHARACTER SET utf8mb4 NOT NULL COLLATE `utf8mb4_unicode_ci`, description LONGTEXT CHARACTER SET utf8mb4 NOT NULL COLLATE `utf8mb4_unicode_ci`, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB COMMENT = \\'\\' ');\n        $this->addSql('ALTER TABLE pins DROP created_at, DROP updated_at');\n    }\n}\n"
+        }
+    ]
+}
