@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 43,
+            "activePatchIndex": 125,
             "patches": [
                 {
                     "date": 1690420768148,
@@ -180,6 +180,334 @@
                 {
                     "date": 1690432492926,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n         <h1>{{ pin.title }}</h1>\n         <p>{{ pin.description }}</p>\n     </article>\n \n-    <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a>\n+    <a href=\"{{ path('app_pins_edit',{'id': pin.id} }}\">Edit</a>\n     {{ pin.id }}\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690456762808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n         <h1>{{ pin.title }}</h1>\n         <p>{{ pin.description }}</p>\n     </article>\n \n-    <a href=\"{{ path('app_pins_edit',{'id': pin.id} }}\">Edit</a>\n-    {{ pin.id }}\n+    <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a>\n+    \n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690457237390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a>\n-    \n+    <a href=\"{{ path('app_pins_delete',{'id': pin.id}) }}\">Edit</a>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690457242712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a>\n-    <a href=\"{{ path('app_pins_delete',{'id': pin.id}) }}\">Edit</a>\n+    <a href=\"{{ path('app_pins_delete',{'id': pin.id}) }}\">delete</a>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690457248154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n         <h1>{{ pin.title }}</h1>\n         <p>{{ pin.description }}</p>\n     </article>\n \n-    <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a>\n+    <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit </a>\n     <a href=\"{{ path('app_pins_delete',{'id': pin.id}) }}\">delete</a>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458183305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,7 @@\n         <h1>{{ pin.title }}</h1>\n         <p>{{ pin.description }}</p>\n     </article>\n \n-    <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit </a>\n-    <a href=\"{{ path('app_pins_delete',{'id': pin.id}) }}\">delete</a>\n+    <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458188379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,7 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n+    form\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458201593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n-    form\n+    {{ form(form) }}\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458215875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n-    {{ form(form) }}\n+    <\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458221453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n-    <\n+    <form\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458227980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n-    <form\n+    <form></form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458235734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,8 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n-    <form></form>\n+    <form   m>\n+    </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458241525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n-    <form   m>\n+    <form  action:>\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458246919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n-    <form  action:>\n+    <form  action=''>\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458255210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n-    <form  action=''>\n+    <form  action=\"\" metods=\"\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458285977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n-    <form  action=\"\" metods=\"\">\n+    <form  action=\"{{ }}\" metods=\"POST\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458292363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n+    <a href=\"{{ path('app_pins_delete',{'id': pin.id}) }}\">delete |</a>\n     <form  action=\"{{ }}\" metods=\"POST\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458304121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n-    <a href=\"{{ path('app_pins_delete',{'id': pin.id}) }}\">delete |</a>\n+    <a href=\"{{  }}\">delete |</a>\n     <form  action=\"{{ }}\" metods=\"POST\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458309528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n-    <a href=\"{{  }}\">delete |</a>\n-    <form  action=\"{{ }}\" metods=\"POST\">\n+    \n+    <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"POST\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458317048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"POST\">\n+    <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"DELETE\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458325464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"DELETE\">\n+    <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458331493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"\">\n+    <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"POST\">\n+        i\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458344080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n     <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"POST\">\n-        i\n+        <input type=\"hidden\" >\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458358021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n     <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"POST\">\n-        <input type=\"hidden\" >\n+        <input type=\"hidden\" name=\"_methods\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458365927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n     <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"POST\">\n-        <input type=\"hidden\" name=\"_methods\">\n+        <input type=\"hidden\" name=\"_method\" value>\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458371021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n     <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"POST\">\n-        <input type=\"hidden\" name=\"_method\" value>\n+        <input type=\"hidden\" name=\"_method\" value=\"DELETE\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458376755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,7 +11,8 @@\n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n     <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"POST\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\">\n+        input\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458383157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n     <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"POST\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\">\n-        input\n+        <input type=\"\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458390782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n     <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"POST\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\">\n-        <input type=\"\">\n+        <input type=\"submit\" val>\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458396525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n     <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"POST\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\">\n-        <input type=\"submit\" val>\n+        <input type=\"submit\" value=\"delete>\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458641127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,7 @@\n     \n     <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"POST\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\">\n         <input type=\"submit\" value=\"delete>\n-    </form>\n+    >\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458655508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,7 @@\n     \n     <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"POST\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\">\n         <input type=\"submit\" value=\"delete>\n-    >\n+    \n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458662342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n     <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"POST\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\">\n-        <input type=\"submit\" value=\"delete>\n-    \n+        <input type=\"submit\" value=\"delete\">\n+    </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458791880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n     <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"POST\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\">\n-        <input type=\"submit\" value=\"delete\">\n+        <input type=\"submit\" value=\"Delete\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458838674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" metods=\"POST\">\n+    <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" method=\"POST\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\">\n         <input type=\"submit\" value=\"Delete\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n"
+                },
+                {
+                    "date": 1690458983346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,9 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form  action=\"{{ path('app_pins_delete',{'id': pin.id}) }}\" method=\"POST\">\n-        <input type=\"hidden\" name=\"_method\" value=\"DELETE\">\n-        <input type=\"submit\" value=\"Delete\">\n-    </form>\n+    <form action=\"{{ path(app_pins]edit', (id: pin.id}) }}\" method-\"post\"»\n+<input type=\"hidden\" name=\" method' value=\"DELETE\", <input type-\"submit\" value-\"Delete\">\n+</ form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458991103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n     <form action=\"{{ path(app_pins]edit', (id: pin.id}) }}\" method-\"post\"»\n-<input type=\"hidden\" name=\" method' value=\"DELETE\", <input type-\"submit\" value-\"Delete\">\n-</ form>\n+        <input type=\"hidden\" name=\" method' value=\"DELETE\", <input type-\"submit\" value-\"Delete\">\n+    </ form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690458999403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form action=\"{{ path(app_pins]edit', (id: pin.id}) }}\" method-\"post\"»\n+    <form action=\"{{ path(app_pins]edit, (id: pin.id}) }}\" method-\"post\"»\n         <input type=\"hidden\" name=\" method' value=\"DELETE\", <input type-\"submit\" value-\"Delete\">\n     </ form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690459013124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form action=\"{{ path(app_pins]edit, (id: pin.id}) }}\" method-\"post\"»\n+    <form action=\"{{ path(app_pins]edit), (id: pin.id}) }}\" method-\"post\"»\n         <input type=\"hidden\" name=\" method' value=\"DELETE\", <input type-\"submit\" value-\"Delete\">\n     </ form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690459023535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form action=\"{{ path(app_pins]edit), (id: pin.id}) }}\" method-\"post\"»\n+    <form action=\"{{ path(app_pinsedit), (id: pin.id}) }}\" method-\"post\"»\n         <input type=\"hidden\" name=\" method' value=\"DELETE\", <input type-\"submit\" value-\"Delete\">\n     </ form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690459030145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form action=\"{{ path(app_pinsedit), (id: pin.id}) }}\" method-\"post\"»\n+    <form action=\"{{ path('app_pins_edit'), (id: pin.id}) }}\" method-\"post\"»\n         <input type=\"hidden\" name=\" method' value=\"DELETE\", <input type-\"submit\" value-\"Delete\">\n     </ form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690459039037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form action=\"{{ path('app_pins_edit'), (id: pin.id}) }}\" method-\"post\"»\n+    <form action=\"{{ path('app_pins_edit', (id: pin.id}) }}\" method-\"post\"»\n         <input type=\"hidden\" name=\" method' value=\"DELETE\", <input type-\"submit\" value-\"Delete\">\n     </ form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690459075573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form action=\"{{ path('app_pins_edit', (id: pin.id}) }}\" method-\"post\"»\n-        <input type=\"hidden\" name=\" method' value=\"DELETE\", <input type-\"submit\" value-\"Delete\">\n+    <form action=\"{{ path('app_pins_edit',(id: pin.id}) }}\" method-\"post\"»\n+        <input type=\"hidden\" name=\" method' value=\"DELETE\"> <input type-\"submit\" value-\"Delete\">\n     </ form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690459085227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,10 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form action=\"{{ path('app_pins_edit',(id: pin.id}) }}\" method-\"post\"»\n-        <input type=\"hidden\" name=\" method' value=\"DELETE\"> <input type-\"submit\" value-\"Delete\">\n+    <form action=\"{{ path('app_pins_edit',(id: pin.id}) }}\" method=\"post\"»\n+        <input type=\"hidden\" name=\" method' value=\"DELETE\"> \n+        <input type-\"submit\" value-\"Delete\">\n     </ form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690459104132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form action=\"{{ path('app_pins_edit',(id: pin.id}) }}\" method=\"post\"»\n+    <form action={{ path('app_pins_edit',(id: pin.id}) }}\" method=\"post\"»\n         <input type=\"hidden\" name=\" method' value=\"DELETE\"> \n         <input type-\"submit\" value-\"Delete\">\n     </ form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n"
+                },
+                {
+                    "date": 1690459111589,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form action={{ path('app_pins_edit',(id: pin.id}) }}\" method=\"post\"»\n+    <form action=\"{{ path('app_pins_edit',(id: pin.id}) }}\"\" method=\"post\"»\n         <input type=\"hidden\" name=\" method' value=\"DELETE\"> \n         <input type-\"submit\" value-\"Delete\">\n     </ form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n"
+                },
+                {
+                    "date": 1690459125815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form action=\"{{ path('app_pins_edit',(id: pin.id}) }}\"\" method=\"post\"»\n+    <form action=\"{{ path('app_pins_edit',(id: pin.id}) }}\" method=\"post\"»\n         <input type=\"hidden\" name=\" method' value=\"DELETE\"> \n         <input type-\"submit\" value-\"Delete\">\n     </ form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n"
+                },
+                {
+                    "date": 1690459338077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form action=\"{{ path('app_pins_edit',(id: pin.id}) }}\" method=\"post\"»\n+    <form> action=\"{{ path('app_pins_edit',(id: pin.id}) }}\" method=\"post\">\n         <input type=\"hidden\" name=\" method' value=\"DELETE\"> \n         <input type-\"submit\" value-\"Delete\">\n     </ form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n"
+                },
+                {
+                    "date": 1690459343523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form> action=\"{{ path('app_pins_edit',(id: pin.id}) }}\" method=\"post\">\n+    <form action=\"{{ path('app_pins_edit',(id: pin.id}) }}\" method=\"post\">\n         <input type=\"hidden\" name=\" method' value=\"DELETE\"> \n         <input type-\"submit\" value-\"Delete\">\n     </ form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n"
+                },
+                {
+                    "date": 1690459553949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n     <form action=\"{{ path('app_pins_edit',(id: pin.id}) }}\" method=\"post\">\n-        <input type=\"hidden\" name=\" method' value=\"DELETE\"> \n+        <input type=\"hidden\" name=\" method\" value=\"DELETE\"> \n         <input type-\"submit\" value-\"Delete\">\n     </ form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690459582014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n     <form action=\"{{ path('app_pins_edit',(id: pin.id}) }}\" method=\"post\">\n-        <input type=\"hidden\" name=\" method\" value=\"DELETE\"> \n+        <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n         <input type-\"submit\" value-\"Delete\">\n-    </ form>\n+    </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690460448263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n     <form action=\"{{ path('app_pins_edit',(id: pin.id}) }}\" method=\"post\">\n-        <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n+        :\n         <input type-\"submit\" value-\"Delete\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690460530209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form action=\"{{ path('app_pins_edit',(id: pin.id}) }}\" method=\"post\">\n-        :\n+    <form action=\"{{ path('app_pins_edit',id: pin.id}) }}\" method=\"post\">\n+        <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n         <input type-\"submit\" value-\"Delete\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690460549054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form action=\"{{ path('app_pins_edit',id: pin.id}) }}\" method=\"post\">\n+    <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"post\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n-        <input type-\"submit\" value-\"Delete\">\n+        <input type=\"submit\" value-\"Delete\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690460571333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n     <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"post\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n-        <input type=\"submit\" value-\"Delete\">\n+        <input type=\"submit\" value=\"Delete\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690496467291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"post\">\n+    <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"post\" style>\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n         <input type=\"submit\" value=\"Delete\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n"
+                },
+                {
+                    "date": 1690496477941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"post\" style>\n+    <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"post\" style=\"display\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n         <input type=\"submit\" value=\"Delete\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n"
+                },
+                {
+                    "date": 1690496483816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"post\" style=\"display\">\n+    <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"post\" style=\"display:none\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n         <input type=\"submit\" value=\"Delete\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n"
+                },
+                {
+                    "date": 1690496495683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n     \n-    <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"post\" style=\"display:none\">\n+    <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"post\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n         <input type=\"submit\" value=\"Delete\">\n     </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n"
+                },
+                {
+                    "date": 1690496540007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,6 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n-    \n-    <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"post\" style=\"display:none;\">\n-        <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n-        <input type=\"submit\" value=\"Delete\">\n-    </form>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690496551643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,12 @@\n         <h1>{{ pin.title }}</h1>\n         <p>{{ pin.description }}</p>\n     </article>\n \n-    <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit |</a>\n+    <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a>\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n+\n+    <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"post\" style=\"display:none;\">\n+        <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n+        <input type=\"submit\" value=\"Delete\">\n+    </form>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690496562745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,11 @@\n         <h1>{{ pin.title }}</h1>\n         <p>{{ pin.description }}</p>\n     </article>\n \n-    <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a>\n+    <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n+    <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n+\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n     <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"post\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n"
+                },
+                {
+                    "date": 1690496569678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-    <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-\n+    <a href=\"{{ path('app_pins_delete',{'id': pin.id}) }}\">Edit</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n     <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"post\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n"
+                },
+                {
+                    "date": 1690496576748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-    <a href=\"{{ path('app_pins_delete',{'id': pin.id}) }}\">Edit</a> |\n+    <a href=\"{{ path('app_pins_delete',{'id': pin.id}) }}\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n     <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"post\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n"
+                },
+                {
+                    "date": 1690496605272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-    <a href=\"{{ path('app_pins_delete',{'id': pin.id}) }}\">Delete</a> |\n+    <a href=\"#\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n     <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"post\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n"
+                },
+                {
+                    "date": 1690496644238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n     <a href=\"#\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n-    <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"post\" style=\"display:none;\">\n+    <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n         <input type=\"submit\" value=\"Delete\">\n     </form>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690496689965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n     <a href=\"#\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n-    <form action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n+    <form  action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n         <input type=\"submit\" value=\"Delete\">\n     </form>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690496695437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n     <a href=\"#\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n-    <form  action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n+    <form id=\"js- action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n         <input type=\"submit\" value=\"Delete\">\n     </form>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690496702084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n     <a href=\"#\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n-    <form id=\"js- action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n+    <form id=\"js-pin-delete action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n         <input type=\"submit\" value=\"Delete\">\n     </form>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690496731413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,12 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-    <a href=\"#\">Delete</a> |\n+    <a href=\"\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n-    <form id=\"js-pin-delete action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n+    <form id=\"js-pin-delete\" action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n         <input type=\"submit\" value=\"Delete\">\n     </form>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690496737466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-    <a href=\"\">Delete</a> |\n+    <a href=\"https://\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n     <form id=\"js-pin-delete\" action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n"
+                },
+                {
+                    "date": 1690496746628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-    <a href=\"https://\">Delete</a> |\n+    <a href=\"https://google.com\" oncl>Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n     <form id=\"js-pin-delete\" action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n"
+                },
+                {
+                    "date": 1690497009635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-    <a href=\"https://google.com\" oncl>Delete</a> |\n+    <a href=\"https://google.com\" onclick>Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n     <form id=\"js-pin-delete\" action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n"
+                },
+                {
+                    "date": 1690497016894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-    <a href=\"https://google.com\" onclick>Delete</a> |\n+    <a href=\"https://google.com\" onclick=\"alert()\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n     <form id=\"js-pin-delete\" action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n"
+                },
+                {
+                    "date": 1690497022356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-    <a href=\"https://google.com\" onclick=\"alert()\">Delete</a> |\n+    <a href=\"https://google.com\" onclick=\"alert('cool')\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n     <form id=\"js-pin-delete\" action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n"
+                },
+                {
+                    "date": 1690497065735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-    <a href=\"https://google.com\" onclick=\"alert('cool')\">Delete</a> |\n+    <a href=\"https://google.com\" onclick=\"alert(\"cool');\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n     <form id=\"js-pin-delete\" action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n"
+                },
+                {
+                    "date": 1690497150116,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-    <a href=\"https://google.com\" onclick=\"alert(\"cool');\">Delete</a> |\n+    <a href=\"https://google.com\" onclick=\"alert(en\"cool\");\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n     <form id=\"js-pin-delete\" action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n"
+                },
+                {
+                    "date": 1690497161418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-    <a href=\"https://google.com\" onclick=\"alert(en\"cool\");\">Delete</a> |\n+    <a href=\"https://google.com\" onclick=\"eventalert(\"cool\");\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n     <form id=\"js-pin-delete\" action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n"
+                },
+                {
+                    "date": 1690497173139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-    <a href=\"https://google.com\" onclick=\"eventalert(\"cool\");\">Delete</a> |\n+    <a href=\"https://google.com\" onclick=\"event.prealert(\"cool\");\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n     <form id=\"js-pin-delete\" action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n"
+                },
+                {
+                    "date": 1690497179556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-    <a href=\"https://google.com\" onclick=\"event.prealert(\"cool\");\">Delete</a> |\n+    <a href=\"https://google.com\" onclick=\"event.prevalert(\"cool\");\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n     <form id=\"js-pin-delete\" action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n"
+                },
+                {
+                    "date": 1690497190147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-    <a href=\"https://google.com\" onclick=\"event.prevalert(\"cool\");\">Delete</a> |\n+    <a href=\"https://google.com\" onclick=\"event.preventDefalert(\"cool\");\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n     <form id=\"js-pin-delete\" action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n"
+                },
+                {
+                    "date": 1690498731798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,11 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-    <a href=\"https://google.com\" onclick=\"event.preventDefalert(\"cool\");\">Delete</a> |\n+    <a href=\"https://google.com\" onclick=\"event.preventDefault; alert(\"cool\");\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n     <form id=\"js-pin-delete\" action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n-        <input type=\"submit\" value=\"Delete\">\n     </form>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690500139850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-    <a href=\"https://google.com\" onclick=\"event.preventDefault; alert(\"cool\");\">Delete</a> |\n+    <a href=\"https://google.com\" onclick=\"alert(\"cool\");\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n     <form id=\"js-pin-delete\" action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n"
                 }
             ],
             "date": 1690420768148,

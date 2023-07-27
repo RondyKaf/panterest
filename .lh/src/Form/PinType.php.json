@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 45,
+            "activePatchIndex": 51,
             "patches": [
                 {
                     "date": 1690452001397,
@@ -188,6 +188,30 @@
                 {
                     "date": 1690454297188,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n <?php\n \n-namespace App\\Entity\\Pin;\n use App\\Entity\\Pin;\n use Symfony\\Component\\Form\\AbstractType;\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n"
+                },
+                {
+                    "date": 1690498101085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n     public function buildForm(FormBuilderInterface $bluider,array $option){\n         $bluider\n             ->add('title')\n             ->add('description')\n+            \n         ;\n     }\n     public function configureOptions(OptionsResolver $resolver){\n         $resolver->setDefaults(\n"
+                },
+                {
+                    "date": 1690498219023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n         $bluider\n             ->add('title')\n             ->add('description')\n             \n+\n         ;\n     }\n     public function configureOptions(OptionsResolver $resolver){\n         $resolver->setDefaults(\n"
+                },
+                {
+                    "date": 1690498227205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     public function buildForm(FormBuilderInterface $bluider,array $option){\n         $bluider\n             ->add('title')\n             ->add('description')\n-            \n+            ->setMe\n \n         ;\n     }\n     public function configureOptions(OptionsResolver $resolver){\n"
+                },
+                {
+                    "date": 1690498267715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     public function buildForm(FormBuilderInterface $bluider,array $option){\n         $bluider\n             ->add('title')\n             ->add('description')\n-            ->setMe\n+            ->setMethod(\"PUT\")\n \n         ;\n     }\n     public function configureOptions(OptionsResolver $resolver){\n"
+                },
+                {
+                    "date": 1690498288512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     public function buildForm(FormBuilderInterface $bluider,array $option){\n         $bluider\n             ->add('title')\n             ->add('description')\n-            ->setMethod(\"PUT\")\n+            ->setMethod('POST')\n \n         ;\n     }\n     public function configureOptions(OptionsResolver $resolver){\n"
+                },
+                {
+                    "date": 1690498456487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     public function buildForm(FormBuilderInterface $bluider,array $option){\n         $bluider\n             ->add('title')\n             ->add('description')\n-            ->setMethod('POST')\n+           \n \n         ;\n     }\n     public function configureOptions(OptionsResolver $resolver){\n"
                 }
             ],
             "date": 1690452001397,
