@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 125,
+            "activePatchIndex": 126,
             "patches": [
                 {
                     "date": 1690420768148,
@@ -508,6 +508,10 @@
                 {
                     "date": 1690500139850,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <p>{{ pin.description }}</p>\n     </article>\n \n     <a href=\"{{ path('app_pins_edit',{'id': pin.id}) }}\">Edit</a> |\n-    <a href=\"https://google.com\" onclick=\"event.preventDefault; alert(\"cool\");\">Delete</a> |\n+    <a href=\"https://google.com\" onclick=\"alert(\"cool\");\">Delete</a> |\n     <a href=\"{{ path('app_home') }}\">Go Back</a>\n \n     <form id=\"js-pin-delete\" action=\"{{ path('app_pins_edit',{id: pin.id}) }}\" method=\"POST\" style=\"display:none;\">\n         <input type=\"hidden\" name=\"_method\" value=\"DELETE\"> \n"
+                },
+                {
+                    "date": 1690503972407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-{% extends 'base.html.twig' %}\n+{% extends 'layouts/base.html.twig' %}\n \n {% block title pin.title %}\n \n {% block body %}\n"
                 }
             ],
             "date": 1690420768148,

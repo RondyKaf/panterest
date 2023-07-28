@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 18,
+            "activePatchIndex": 62,
             "patches": [
                 {
                     "date": 1690428996265,
@@ -80,6 +80,182 @@
                 {
                     "date": 1690429152759,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     <body>\n     <nav>\n         <ul>\n             <li><a href=\"{{ path('app_home')}}\">Home</a></li>\n-            <li><a href=\"{{ path('app_pins_create)}}\">New Pin</a></li>\n+            <li><a href=\"{{ path('app_pins_create') }}\">New Pin</a></li>\n         </ul>\n     </nav>\n         {% block body %}{% endblock %}\n     </body>\n"
+                },
+                {
+                    "date": 1690503070885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,11 +13,14 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n+    {8 for typ, messages in app. flashes %} {% for message in messages %}\n+› r vendor\n+{% endfor %} {& endfor 8}\n     <nav>\n         <ul>\n-            <li><a href=\"{{ path('app_home')}}\">Home</a></li>\n+            <li><a href=\"{{ path('app_home') }}\">Home</a></li>\n             <li><a href=\"{{ path('app_pins_create') }}\">New Pin</a></li>\n         </ul>\n     </nav>\n         {% block body %}{% endblock %}\n"
+                },
+                {
+                    "date": 1690503077026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-    {8 for typ, messages in app. flashes %} {% for message in messages %}\n+    {% for typ, messages in app. flashes %} {% for message in messages %}\n › r vendor\n {% endfor %} {& endfor 8}\n     <nav>\n         <ul>\n"
+                },
+                {
+                    "date": 1690503084417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     </head>\n     <body>\n     {% for typ, messages in app. flashes %} {% for message in messages %}\n › r vendor\n-{% endfor %} {& endfor 8}\n+    {% endfor %}{& endfor 8}\n     <nav>\n         <ul>\n             <li><a href=\"{{ path('app_home') }}\">Home</a></li>\n             <li><a href=\"{{ path('app_pins_create') }}\">New Pin</a></li>\n"
+                },
+                {
+                    "date": 1690503090641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,10 @@\n     </head>\n     <body>\n     {% for typ, messages in app. flashes %} {% for message in messages %}\n › r vendor\n-    {% endfor %}{& endfor 8}\n+    {% endfor %}\n+    {% endfor 8}\n     <nav>\n         <ul>\n             <li><a href=\"{{ path('app_home') }}\">Home</a></li>\n             <li><a href=\"{{ path('app_pins_create') }}\">New Pin</a></li>\n"
+                },
+                {
+                    "date": 1690503099537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,11 +14,10 @@\n         {% endblock %}\n     </head>\n     <body>\n     {% for typ, messages in app. flashes %} {% for message in messages %}\n-› r vendor\n     {% endfor %}\n-    {% endfor 8}\n+    {% endfor 8%}\n     <nav>\n         <ul>\n             <li><a href=\"{{ path('app_home') }}\">Home</a></li>\n             <li><a href=\"{{ path('app_pins_create') }}\">New Pin</a></li>\n"
+                },
+                {
+                    "date": 1690503106307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,11 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-    {% for typ, messages in app. flashes %} {% for message in messages %}\n-    {% endfor %}\n+    {% for typ, messages in app. flashes %} \n+        {% for message in messages %}\n+        {% endfor %}\n     {% endfor 8%}\n     <nav>\n         <ul>\n             <li><a href=\"{{ path('app_home') }}\">Home</a></li>\n"
+                },
+                {
+                    "date": 1690503148256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,12 +13,12 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-    {% for typ, messages in app. flashes %} \n+    {% for type, messages in app. flashes %} \n         {% for message in messages %}\n         {% endfor %}\n-    {% endfor 8%}\n+    {% endfor %}\n     <nav>\n         <ul>\n             <li><a href=\"{{ path('app_home') }}\">Home</a></li>\n             <li><a href=\"{{ path('app_pins_create') }}\">New Pin</a></li>\n"
+                },
+                {
+                    "date": 1690503155633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-    {% for type, messages in app. flashes %} \n+    {% for type, messages in app.flashes %} \n         {% for message in messages %}\n         {% endfor %}\n     {% endfor %}\n     <nav>\n"
+                },
+                {
+                    "date": 1690503162869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n         {% for message in messages %}\n+            \n         {% endfor %}\n     {% endfor %}\n     <nav>\n         <ul>\n"
+                },
+                {
+                    "date": 1690503169080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n         {% for message in messages %}\n-            \n+            div\n         {% endfor %}\n     {% endfor %}\n     <nav>\n         <ul>\n"
+                },
+                {
+                    "date": 1690503179345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,11 @@\n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n         {% for message in messages %}\n-            div\n+            <div>\n+            \n+            </div>\n         {% endfor %}\n     {% endfor %}\n     <nav>\n         <ul>\n"
+                },
+                {
+                    "date": 1690503185935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     <body>\n     {% for type, messages in app.flashes %} \n         {% for message in messages %}\n             <div>\n-            \n+                {{  mess}}\n             </div>\n         {% endfor %}\n     {% endfor %}\n     <nav>\n"
+                },
+                {
+                    "date": 1690503276588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n         {% for message in messages %}\n-            <div>\n-                {{  mess}}\n+            <div class=\">\n+                {{  message }}\n             </div>\n         {% endfor %}\n     {% endfor %}\n     <nav>\n"
+                },
+                {
+                    "date": 1690503283591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n         {% for message in messages %}\n-            <div class=\">\n+            <div class=\"alert alert-{{}}>\n                 {{  message }}\n             </div>\n         {% endfor %}\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690503289524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n         {% for message in messages %}\n-            <div class=\"alert alert-{{}}>\n+            <div class=\"alert alert-{{ type }}\">\n                 {{  message }}\n             </div>\n         {% endfor %}\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690503302825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n         {% for message in messages %}\n-            <div class=\"alert alert-{{ type }}\">\n+            <div class=\"alert alert-{{ type }}\" role=\"\">\n                 {{  message }}\n             </div>\n         {% endfor %}\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690503308241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n         {% for message in messages %}\n-            <div class=\"alert alert-{{ type }}\" role=\"\">\n+            <div class=\"alert alert-{{ type }}\" role=\"alert\">\n                 {{  message }}\n             </div>\n         {% endfor %}\n     {% endfor %}\n"
+                },
+                {
+                    "date": 1690503364640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n \n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n+        \n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n         {% for message in messages %}\n"
+                },
+                {
+                    "date": 1690503378800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n-        \n+        sty\n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n         {% for message in messages %}\n"
+                },
+                {
+                    "date": 1690503385870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,11 @@\n \n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n-        sty\n+        <style>\n+            .alert\n+        </style>\n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n         {% for message in messages %}\n"
+                },
+                {
+                    "date": 1690503393859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,11 @@\n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n         <style>\n-            .alert\n+            .alert{\n+                padding:\n+            }\n         </style>\n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n"
+                },
+                {
+                    "date": 1690503399840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,10 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n         <style>\n             .alert{\n-                padding:\n+                padding: 10px;\n+                \n             }\n         </style>\n     </head>\n     <body>\n"
+                },
+                {
+                    "date": 1690503406881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         {% endblock %}\n         <style>\n             .alert{\n                 padding: 10px;\n-                \n+                color:\n             }\n         </style>\n     </head>\n     <body>\n"
+                },
+                {
+                    "date": 1690503412053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         {% endblock %}\n         <style>\n             .alert{\n                 padding: 10px;\n-                color:\n+                color: white;\n             }\n         </style>\n     </head>\n     <body>\n"
+                },
+                {
+                    "date": 1690503418289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n         <style>\n             .alert{\n                 padding: 10px;\n                 color: white;\n+                text-\n             }\n         </style>\n     </head>\n     <body>\n"
+                },
+                {
+                    "date": 1690503426937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <style>\n             .alert{\n                 padding: 10px;\n                 color: white;\n-                text-\n+                text-align:\n             }\n         </style>\n     </head>\n     <body>\n"
+                },
+                {
+                    "date": 1690503446137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,11 @@\n         <style>\n             .alert{\n                 padding: 10px;\n                 color: white;\n-                text-align:\n+                text-align:center;\n             }\n+            \n         </style>\n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n"
+                },
+                {
+                    "date": 1690503451912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n                 padding: 10px;\n                 color: white;\n                 text-align:center;\n             }\n-            \n+            .alert\n         </style>\n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n"
+                },
+                {
+                    "date": 1690503458699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n                 padding: 10px;\n                 color: white;\n                 text-align:center;\n             }\n-            .alert\n+            .alert-success\n         </style>\n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n"
+                },
+                {
+                    "date": 1690503464644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,11 @@\n                 padding: 10px;\n                 color: white;\n                 text-align:center;\n             }\n-            .alert-success\n+            .alert-success{\n+                backgr\n+            }\n         </style>\n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n"
+                },
+                {
+                    "date": 1690503474310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n                 color: white;\n                 text-align:center;\n             }\n             .alert-success{\n-                backgr\n+                background:\n             }\n         </style>\n     </head>\n     <body>\n"
+                },
+                {
+                    "date": 1690503487574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n                 color: white;\n                 text-align:center;\n             }\n             .alert-success{\n-                background:\n+                background-color: green;\n             }\n         </style>\n     </head>\n     <body>\n"
+                },
+                {
+                    "date": 1690503493963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n             }\n             .alert-success{\n                 background-color: green;\n             }\n+            \n         </style>\n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n"
+                },
+                {
+                    "date": 1690503505612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,11 @@\n             }\n             .alert-success{\n                 background-color: green;\n             }\n-            \n+            .alert-error{\n+                background-color: green;\n+            }\n         </style>\n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n"
+                },
+                {
+                    "date": 1690503511906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             .alert-success{\n                 background-color: green;\n             }\n             .alert-error{\n-                background-color: green;\n+                background-color: red;\n             }\n         </style>\n     </head>\n     <body>\n"
+                },
+                {
+                    "date": 1690503525685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,11 @@\n             }\n             .alert-error{\n                 background-color: red;\n             }\n+            .alert-success{\n+                background-color: blue;\n+            }\n         </style>\n     </head>\n     <body>\n     {% for type, messages in app.flashes %} \n"
+                },
+                {
+                    "date": 1690503561549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n             }\n             .alert-error{\n                 background-color: red;\n             }\n-            .alert-success{\n+            .alert-info{\n                 background-color: blue;\n             }\n         </style>\n     </head>\n"
+                },
+                {
+                    "date": 1690503753947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,15 +29,9 @@\n             }\n         </style>\n     </head>\n     <body>\n-    {% for type, messages in app.flashes %} \n-        {% for message in messages %}\n-            <div class=\"alert alert-{{ type }}\" role=\"alert\">\n-                {{  message }}\n-            </div>\n-        {% endfor %}\n-    {% endfor %}\n+    \n     <nav>\n         <ul>\n             <li><a href=\"{{ path('app_home') }}\">Home</a></li>\n             <li><a href=\"{{ path('app_pins_create') }}\">New Pin</a></li>\n"
+                },
+                {
+                    "date": 1690503779667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             }\n         </style>\n     </head>\n     <body>\n-    \n+    {{}}\n     <nav>\n         <ul>\n             <li><a href=\"{{ path('app_home') }}\">Home</a></li>\n             <li><a href=\"{{ path('app_pins_create') }}\">New Pin</a></li>\n"
+                },
+                {
+                    "date": 1690503789416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             }\n         </style>\n     </head>\n     <body>\n-    {{}}\n+    {{ {{ include(, with, ignore_missing) }}}}\n     <nav>\n         <ul>\n             <li><a href=\"{{ path('app_home') }}\">Home</a></li>\n             <li><a href=\"{{ path('app_pins_create') }}\">New Pin</a></li>\n"
+                },
+                {
+                    "date": 1690503855979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             }\n         </style>\n     </head>\n     <body>\n-    {{ {{ include(, with, ignore_missing) }}}}\n+    {{ {{ include(layouts) }}}}\n     <nav>\n         <ul>\n             <li><a href=\"{{ path('app_home') }}\">Home</a></li>\n             <li><a href=\"{{ path('app_pins_create') }}\">New Pin</a></li>\n"
+                },
+                {
+                    "date": 1690503861766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             }\n         </style>\n     </head>\n     <body>\n-    {{ {{ include(layouts) }}}}\n+    {{ {{ include(layouts/partieks/) }}}}\n     <nav>\n         <ul>\n             <li><a href=\"{{ path('app_home') }}\">Home</a></li>\n             <li><a href=\"{{ path('app_pins_create') }}\">New Pin</a></li>\n"
+                },
+                {
+                    "date": 1690503869780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             }\n         </style>\n     </head>\n     <body>\n-    {{ {{ include(layouts/partieks/) }}}}\n+    {{ {{ include(layouts/partieks/_flash_message) }}}}\n     <nav>\n         <ul>\n             <li><a href=\"{{ path('app_home') }}\">Home</a></li>\n             <li><a href=\"{{ path('app_pins_create') }}\">New Pin</a></li>\n"
+                },
+                {
+                    "date": 1690503879831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             }\n         </style>\n     </head>\n     <body>\n-    {{ {{ include(layouts/partieks/_flash_message) }}}}\n+    {{ {{ include(layouts/partieks/_flash_message.html.twig) }}}}\n     <nav>\n         <ul>\n             <li><a href=\"{{ path('app_home') }}\">Home</a></li>\n             <li><a href=\"{{ path('app_pins_create') }}\">New Pin</a></li>\n"
                 }
             ],
             "date": 1690428996265,

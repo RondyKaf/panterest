@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 60,
+            "activePatchIndex": 61,
             "patches": [
                 {
                     "date": 1690414806185,
@@ -248,6 +248,10 @@
                 {
                     "date": 1690449291789,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n     {% for pin in pins %}\n-        <h2><a href=\"{{ path('app_pins_show',{'id'}) }}\">{{ pin.title }}</a></h2> \n+        <h2><a href=\"{{ path('app_pins_show',{'id':pin.id}) }}\">{{ pin.title }}</a></h2> \n         <p>{{ pin.description }}</p>\n     {% endfor %}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690503968022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n-{% extends 'base.html.twig' %}\n+{% extends 'layouts/base.html.twig' %}\n \n+\n {% block title \"Find all best pins\" %}\n \n {% block body %}\n     <h1>{{ pluralize( pins|length, 'pin') }}</h1>\n"
                 }
             ],
             "date": 1690414806185,

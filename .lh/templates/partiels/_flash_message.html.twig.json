@@ -1,0 +1,26 @@
+{
+    "sourceFile": "templates/partiels/_flash_message.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1690503756825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690503762383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% for type, messages in app.flashes %} \n-        {% for message in messages %}\n-            <div class=\"alert alert-{{ type }}\" role=\"alert\">\n+    {% for message in messages %}\n+         <div class=\"alert alert-{{ type }}\" role=\"alert\">\n                 {{  message }}\n             </div>\n\\ No newline at end of file\n         {% endfor %}\n-    {% endfor %}\n+{% endfor %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690503769582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% for type, messages in app.flashes %} \n     {% for message in messages %}\n          <div class=\"alert alert-{{ type }}\" role=\"alert\">\n-                {{  message }}\n-            </div>\n-        {% endfor %}\n+            {{  message }}\n+        </div>\n+    {% endfor %}\n {% endfor %}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1690503756825,
+            "name": "Commit-0",
+            "content": "{% for type, messages in app.flashes %} \n        {% for message in messages %}\n            <div class=\"alert alert-{{ type }}\" role=\"alert\">\n                {{  message }}\n            </div>\n        {% endfor %}\n    {% endfor %}"
+        }
+    ]
+}
