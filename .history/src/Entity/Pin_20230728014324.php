@@ -24,7 +24,7 @@ class Pin
 
     #[ORM\Column(type: Types::TEXT)]
     #[Assert\NotBlank]
-    #[Assert\length(min:10,minMessage:('Il faut plus de 10 caractères'))]
+    #[Assert\length(min:10)]
 
     private ?string $description = null;
 

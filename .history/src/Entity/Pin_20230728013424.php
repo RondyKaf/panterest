@@ -10,6 +10,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 #[ORM\Entity(repositoryClass: PinRepository::class)]
 #[ORM\Table(name:"pins")]
 #[ORM\HasLifecycleCallbacks]
+
 class Pin
 {
     #[ORM\Id]
@@ -18,14 +19,9 @@ class Pin
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-    #[Assert\NotBlank(message:"Veuillez remplir la case")]
-    #[Assert\length(min:3)]
     private ?string $title = null;
 
     #[ORM\Column(type: Types::TEXT)]
-    #[Assert\NotBlank]
-    #[Assert\length(min:10,minMessage:('Il faut plus de 10 caractères'))]
-
     private ?string $description = null;
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
