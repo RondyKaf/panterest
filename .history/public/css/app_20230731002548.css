@@ -1,0 +1,26 @@
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: ;
+}
+
+.alert {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+}
+
+.alert-success {
+    background-color: green;
+}
+
+.alert-error {
+    background-color: red;
+}
+
+.alert-info {
+    background-color: blue;
+}

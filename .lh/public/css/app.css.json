@@ -1,0 +1,74 @@
+{
+    "sourceFile": "public/css/app.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 14,
+            "patches": [
+                {
+                    "date": 1690758691041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690758697610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,5 @@\n                 }\n                 .alert-info{\n                     background-color: blue;\n                 }\n-            </style>\n\\ No newline at end of file\n+    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690758705204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n-<style>\n-            html,body{\n-                font-family: 'Montserrat', sans-serif;\n+html,body{\n+    font-family: 'Montserrat', sans-serif;\n             }\n                 .alert{\n                     padding: 10px;\n                     color: white;\n"
+                },
+                {
+                    "date": 1690758715945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n html,body{\n     font-family: 'Montserrat', sans-serif;\n-            }\n-                .alert{\n+    }\n+.alert{\n                     padding: 10px;\n                     color: white;\n                     text-align:center;\n                     margin:0;\n"
+                },
+                {
+                    "date": 1690758723763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n html,body{\n     font-family: 'Montserrat', sans-serif;\n     }\n+\n .alert{\n-                    padding: 10px;\n+    padding: 10px;\n                     color: white;\n                     text-align:center;\n                     margin:0;\n                     border:0;\n"
+                },
+                {
+                    "date": 1690758732123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n     }\n \n .alert{\n     padding: 10px;\n-                    color: white;\n-                    text-align:center;\n+    color: white;\n+    text-align:center;\n                     margin:0;\n                     border:0;\n                     border-radius:0;\n                 }\n"
+                },
+                {
+                    "date": 1690758739348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n .alert{\n     padding: 10px;\n     color: white;\n     text-align:center;\n-                    margin:0;\n-                    border:0;\n+    margin:0;\n+    border:0;\n                     border-radius:0;\n                 }\n                 .alert-success{\n                     background-color: green;\n"
+                },
+                {
+                    "date": 1690758747420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,11 @@\n     color: white;\n     text-align:center;\n     margin:0;\n     border:0;\n-                    border-radius:0;\n-                }\n+    border-radius:0;\n+}\n+\n                 .alert-success{\n                     background-color: green;\n                 }\n                 .alert-error{\n"
+                },
+                {
+                    "date": 1690758752548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n     border:0;\n     border-radius:0;\n }\n \n-                .alert-success{\n-                    background-color: green;\n+.alert-success{\n+    background-color: green;\n                 }\n                 .alert-error{\n                     background-color: red;\n                 }\n"
+                },
+                {
+                    "date": 1690758758181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,10 @@\n }\n \n .alert-success{\n     background-color: green;\n-                }\n+}\n+\n                 .alert-error{\n                     background-color: red;\n                 }\n                 .alert-info{\n"
+                },
+                {
+                    "date": 1690758763556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,10 @@\n .alert-success{\n     background-color: green;\n }\n \n-                .alert-error{\n-                    background-color: red;\n+.alert-error{\n+    background-color: red;\n                 }\n                 .alert-info{\n                     background-color: blue;\n                 }\n"
+                },
+                {
+                    "date": 1690758770645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,10 @@\n }\n \n .alert-error{\n     background-color: red;\n-                }\n-                .alert-info{\n+}\n+\n+.alert-info{\n                     background-color: blue;\n                 }\n     \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690759546309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,25 +1,26 @@\n-html,body{\n+html,\n+body {\n     font-family: 'Montserrat', sans-serif;\n-    }\n+    font-\n+}\n \n-.alert{\n+.alert {\n     padding: 10px;\n     color: white;\n-    text-align:center;\n-    margin:0;\n-    border:0;\n-    border-radius:0;\n+    text-align: center;\n+    margin: 0;\n+    border: 0;\n+    border-radius: 0;\n }\n \n-.alert-success{\n+.alert-success {\n     background-color: green;\n\\ No newline at end of file\n }\n \n-.alert-error{\n+.alert-error {\n     background-color: red;\n }\n \n-.alert-info{\n-                    background-color: blue;\n-                }\n-    \n+.alert-info {\n+    background-color: blue;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690759556262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n html,\n body {\n     font-family: 'Montserrat', sans-serif;\n-    font-\n+    font-weight: np;\n }\n \n .alert {\n     padding: 10px;\n"
+                },
+                {
+                    "date": 1690759567292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n html,\n body {\n     font-family: 'Montserrat', sans-serif;\n-    font-weight: np;\n+    font-weight: 100;\n }\n \n .alert {\n     padding: 10px;\n"
+                }
+            ],
+            "date": 1690758691041,
+            "name": "Commit-0",
+            "content": "<style>\n            html,body{\n                font-family: 'Montserrat', sans-serif;\n            }\n                .alert{\n                    padding: 10px;\n                    color: white;\n                    text-align:center;\n                    margin:0;\n                    border:0;\n                    border-radius:0;\n                }\n                .alert-success{\n                    background-color: green;\n                }\n                .alert-error{\n                    background-color: red;\n                }\n                .alert-info{\n                    background-color: blue;\n                }\n            </style>"
+        }
+    ]
+}
