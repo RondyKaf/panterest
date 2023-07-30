@@ -1,0 +1,62 @@
+{
+    "sourceFile": "config/packages/twig.yaml",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 11,
+            "patches": [
+                {
+                    "date": 1690505839586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690505873362,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n twig:\n     default_path: '%kernel.project_dir%/templates'\n-    form_themes: ['bootstrap_5_horizontal_layout.html.twig']\n when@test:\n     twig:\n         strict_variables: true\n"
+                },
+                {
+                    "date": 1690505895825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n twig:\n     default_path: '%kernel.project_dir%/templates'\n+    form_themes: ['bootstrap_5_horizontal_layout.html.twig']\n when@test:\n     twig:\n         strict_variables: true\n"
+                },
+                {
+                    "date": 1690505902678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n twig:\n     default_path: '%kernel.project_dir%/templates'\n     form_themes: ['bootstrap_5_horizontal_layout.html.twig']\n-when@test:\n-    twig:\n-        strict_variables: true\n+# when@test:\n+#     twig:\n+#         strict_variables: true\n"
+                },
+                {
+                    "date": 1690505939169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n twig:\n     default_path: '%kernel.project_dir%/templates'\n+when@test:\n+    twig:\n+        strict_variables: true\n     form_themes: ['bootstrap_5_horizontal_layout.html.twig']\n-# when@test:\n-#     twig:\n-#         strict_variables: true\n+\n"
+                },
+                {
+                    "date": 1690505946695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,5 @@\n twig:\n-    default_path: '%kernel.project_dir%/templates'\n+    default_path: \"%kernel.project_dir%/templates\"\n when@test:\n     twig:\n         strict_variables: true\n-    form_themes: ['bootstrap_5_horizontal_layout.html.twig']\n-\n"
+                },
+                {
+                    "date": 1690505954082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,8 @@\n twig:\n     default_path: \"%kernel.project_dir%/templates\"\n+    form_themes: [\"bootstrap_5_horizontal_layout.html.twig\"]\n+\n+\n when@test:\n     twig:\n         strict_variables: true\n"
+                },
+                {
+                    "date": 1690505966846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,6 @@\n twig:\n     default_path: \"%kernel.project_dir%/templates\"\n-    form_themes: [\"bootstrap_5_horizontal_layout.html.twig\"]\n \n-\n when@test:\n     twig:\n         strict_variables: true\n"
+                },
+                {
+                    "date": 1690506002904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,4 +3,5 @@\n \n when@test:\n     twig:\n         strict_variables: true\n+    form_themes: [\"bootstrap_5_horizontal_layout.html.twig\"]\n"
+                },
+                {
+                    "date": 1690506012240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,4 @@\n \n when@test:\n     twig:\n         strict_variables: true\n-    form_themes: [\"bootstrap_5_horizontal_layout.html.twig\"]\n"
+                },
+                {
+                    "date": 1690506032571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n twig:\n     default_path: \"%kernel.project_dir%/templates\"\n+    form_themes: [\"bootstrap_5_horizontal_layout.html.twig\"]\n \n when@test:\n     twig:\n         strict_variables: true\n"
+                },
+                {
+                    "date": 1690506196582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n twig:\n     default_path: \"%kernel.project_dir%/templates\"\n-    form_themes: [\"bootstrap_5_horizontal_layout.html.twig\"]\n+    form_themes: [\"bootstrap_5_layout.html.twig\"]\n \n when@test:\n     twig:\n         strict_variables: true\n"
+                }
+            ],
+            "date": 1690505839586,
+            "name": "Commit-0",
+            "content": "twig:\n    default_path: '%kernel.project_dir%/templates'\n    form_themes: ['bootstrap_5_horizontal_layout.html.twig']\nwhen@test:\n    twig:\n        strict_variables: true\n"
+        }
+    ]
+}

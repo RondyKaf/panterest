@@ -1,0 +1,18 @@
+{% extends 'layouts/base.html.twig' %}
+
+{% block title "New Pin" %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-md-6">
+            {{ form_start(formulaire) }}
+            {{ form_widget(formulaire) }}
+     
+                <input type="submit" value="Create Pin" class="btn btn-primary btn-block">
+            {{ form_end(formulaire)}}
+        </div>
+    </div>
+    <h1>Create Pin</h1>
+
+    
+{% endblock %}

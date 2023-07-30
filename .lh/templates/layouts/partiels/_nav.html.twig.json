@@ -1,0 +1,270 @@
+{
+    "sourceFile": "templates/layouts/partiels/_nav.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 63,
+            "patches": [
+                {
+                    "date": 1690507190633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690507217588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,10 @@\n               <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n             </ul>\n           </li>\n         </ul>\n-        <form role=\"search\">\n+        {# <form role=\"search\">\n           <input class=\"form-control\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\n-        </form>\n+        </form> #}\n       </div>\n     </div>\n   </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690507256274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-<nav class=\"navbar navbar-expand-sm navbar-dark bg-dark\" aria-label=\"Third navbar example\">\n+<nav class=\"navbar navbar-expand-sm navbar-dark bg-light\" aria-label=\"Third navbar example\">\n     <div class=\"container-fluid\">\n       <a class=\"navbar-brand\" href=\"#\">Expand at sm</a>\n       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n         <span class=\"navbar-toggler-icon\"></span>\n"
+                },
+                {
+                    "date": 1690507267758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-<nav class=\"navbar navbar-expand-sm navbar-dark bg-light\" aria-label=\"Third navbar example\">\n+<nav class=\"navbar navbar-expand-sm navbar-dark bg-dark\" aria-label=\"Third navbar example\">\n     <div class=\"container-fluid\">\n       <a class=\"navbar-brand\" href=\"#\">Expand at sm</a>\n       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n         <span class=\"navbar-toggler-icon\"></span>\n"
+                },
+                {
+                    "date": 1690507304023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-<nav class=\"navbar navbar-expand-sm navbar-dark bg-dark\" aria-label=\"Third navbar example\">\n+<nav class=\"navbar navbar-expand-sm navbar-light bg-light\" aria-label=\"Third navbar example\">\n     <div class=\"container-fluid\">\n       <a class=\"navbar-brand\" href=\"#\">Expand at sm</a>\n       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n         <span class=\"navbar-toggler-icon\"></span>\n"
+                },
+                {
+                    "date": 1690507329130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-<nav class=\"navbar navbar-expand-sm navbar-light bg-light\" aria-label=\"Third navbar example\">\n+<nav class=\"navbar navbar-expand-sm navbar-light bg-light\"m aria-label=\"Third navbar example\">\n     <div class=\"container-fluid\">\n       <a class=\"navbar-brand\" href=\"#\">Expand at sm</a>\n       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n         <span class=\"navbar-toggler-icon\"></span>\n"
+                },
+                {
+                    "date": 1690507334838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-<nav class=\"navbar navbar-expand-sm navbar-light bg-light\"m aria-label=\"Third navbar example\">\n+<nav class=\"navbar navbar-expand-sm navbar-light bg-light m\" aria-label=\"Third navbar example\">\n     <div class=\"container-fluid\">\n       <a class=\"navbar-brand\" href=\"#\">Expand at sm</a>\n       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n         <span class=\"navbar-toggler-icon\"></span>\n"
+                },
+                {
+                    "date": 1690507358373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-<nav class=\"navbar navbar-expand-sm navbar-light bg-light m\" aria-label=\"Third navbar example\">\n+<nav class=\"navbar navbar-expand-sm navbar-light bg-light mb-4\" aria-label=\"Third navbar example\">\n     <div class=\"container-fluid\">\n       <a class=\"navbar-brand\" href=\"#\">Expand at sm</a>\n       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n         <span class=\"navbar-toggler-icon\"></span>\n"
+                },
+                {
+                    "date": 1690507380865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,8 @@\n               <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n             </ul>\n           </li>\n         </ul>\n-        {# <form role=\"search\">\n-          <input class=\"form-control\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\n-        </form> #}\n+        \n       </div>\n     </div>\n   </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690507398911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <nav class=\"navbar navbar-expand-sm navbar-light bg-light mb-4\" aria-label=\"Third navbar example\">\n     <div class=\"container-fluid\">\n-      <a class=\"navbar-brand\" href=\"#\">Expand at sm</a>\n+      <a class=\"navbar-brand\" href=\"#\"></a>\n       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n"
+                },
+                {
+                    "date": 1690507405516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <nav class=\"navbar navbar-expand-sm navbar-light bg-light mb-4\" aria-label=\"Third navbar example\">\n     <div class=\"container-fluid\">\n-      <a class=\"navbar-brand\" href=\"#\"></a>\n+      <a class=\"navbar-brand\" href=\"#\">Panterest</a>\n       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n"
+                },
+                {
+                    "date": 1690507413737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <nav class=\"navbar navbar-expand-sm navbar-light bg-light mb-4\" aria-label=\"Third navbar example\">\n     <div class=\"container-fluid\">\n-      <a class=\"navbar-brand\" href=\"#\">Panterest</a>\n+      <a class=\"navbar-brand\" href=\"{{ path()}}\">Panterest</a>\n       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n"
+                },
+                {
+                    "date": 1690507419293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <nav class=\"navbar navbar-expand-sm navbar-light bg-light mb-4\" aria-label=\"Third navbar example\">\n     <div class=\"container-fluid\">\n-      <a class=\"navbar-brand\" href=\"{{ path()}}\">Panterest</a>\n+      <a class=\"navbar-brand\" href=\"{{ path('app_home')}}\">Panterest</a>\n       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n"
+                },
+                {
+                    "date": 1690507456289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n <nav class=\"navbar navbar-expand-sm navbar-light bg-light mb-4\" aria-label=\"Third navbar example\">\n     <div class=\"container-fluid\">\n-      <a class=\"navbar-brand\" href=\"{{ path('app_home')}}\">Panterest</a>\n+      <a class=\"navbar-brand\" href=\"{{ path('app_home') }}\">Panterest</a>\n       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample03\">\n         <ul class=\"navbar-nav me-auto mb-2 mb-sm-0\">\n           <li class=\"nav-item\">\n-            <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">Home</a>\n+            <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">P</a>\n           </li>\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">Link</a>\n           </li>\n"
+                },
+                {
+                    "date": 1690507480266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,12 @@\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample03\">\n         <ul class=\"navbar-nav me-auto mb-2 mb-sm-0\">\n           <li class=\"nav-item\">\n-            <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">P</a>\n+            <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">New Pin</a>\n           </li>\n           <li class=\"nav-item\">\n-            <a class=\"nav-link\" href=\"#\">Link</a>\n+            <a class=\"nav-link\" href=\"#\"></a>\n           </li>\n           <li class=\"nav-item\">\n             <a class=\"nav-link disabled\" aria-disabled=\"true\">Disabled</a>\n           </li>\n"
+                },
+                {
+                    "date": 1690507485602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n           <li class=\"nav-item\">\n             <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">New Pin</a>\n           </li>\n           <li class=\"nav-item\">\n-            <a class=\"nav-link\" href=\"#\"></a>\n+            <a class=\"nav-link\" href=\"#\">Account</a>\n           </li>\n           <li class=\"nav-item\">\n             <a class=\"nav-link disabled\" aria-disabled=\"true\">Disabled</a>\n           </li>\n"
+                },
+                {
+                    "date": 1690507491387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">Account</a>\n           </li>\n           <li class=\"nav-item\">\n-            <a class=\"nav-link disabled\" aria-disabled=\"true\">Disabled</a>\n+            <a class=\"nav-link disabled\" aria-disabled=\"true\"></a>\n           </li>\n           <li class=\"nav-item dropdown\">\n             <a class=\"nav-link dropdown-toggle\" href=\"#\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">Dropdown</a>\n             <ul class=\"dropdown-menu\">\n"
+                },
+                {
+                    "date": 1690507515996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">Account</a>\n           </li>\n           <li class=\"nav-item\">\n-            <a class=\"nav-link disabled\" aria-disabled=\"true\"></a>\n+            <a class=\"nav-link disabled\" aria-disabled=\"true\">Lo</a>\n           </li>\n           <li class=\"nav-item dropdown\">\n             <a class=\"nav-link dropdown-toggle\" href=\"#\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">Dropdown</a>\n             <ul class=\"dropdown-menu\">\n"
+                },
+                {
+                    "date": 1690507523060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">Account</a>\n           </li>\n           <li class=\"nav-item\">\n-            <a class=\"nav-link disabled\" aria-disabled=\"true\">Lo</a>\n+            <a class=\"nav-link disabled\" aria-disabled=\"true\">Logout</a>\n           </li>\n           <li class=\"nav-item dropdown\">\n             <a class=\"nav-link dropdown-toggle\" href=\"#\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">Dropdown</a>\n             <ul class=\"dropdown-menu\">\n"
+                },
+                {
+                    "date": 1690507544901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,16 +15,8 @@\n           </li>\n           <li class=\"nav-item\">\n             <a class=\"nav-link disabled\" aria-disabled=\"true\">Logout</a>\n           </li>\n-          <li class=\"nav-item dropdown\">\n-            <a class=\"nav-link dropdown-toggle\" href=\"#\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">Dropdown</a>\n-            <ul class=\"dropdown-menu\">\n-              <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n-              <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n-              <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n-            </ul>\n-          </li>\n         </ul>\n         \n       </div>\n     </div>\n"
+                },
+                {
+                    "date": 1690507663824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample03\">\n-        <ul class=\"navbar-nav me-auto mb-2 mb-sm-0\">\n+        <ul class=\"navbar-nav ml-auto mb-2 mb-sm-0\">\n           <li class=\"nav-item\">\n             <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">New Pin</a>\n           </li>\n           <li class=\"nav-item\">\n"
+                },
+                {
+                    "date": 1690507674216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample03\">\n-        <ul class=\"navbar-nav ml-auto mb-2 mb-sm-0\">\n+        <ul class=\"navbar-nav ml-auto\">\n           <li class=\"nav-item\">\n             <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">New Pin</a>\n           </li>\n           <li class=\"nav-item\">\n"
+                },
+                {
+                    "date": 1690507719727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample03\">\n         <ul class=\"navbar-nav ml-auto\">\n           <li class=\"nav-item\">\n-            <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">New Pin</a>\n+            <a class=\"nav-link active\" href=\"#\">New Pin</a>\n           </li>\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">Account</a>\n           </li>\n"
+                },
+                {
+                    "date": 1690507814979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample03\">\n         <ul class=\"navbar-nav ml-auto\">\n           <li class=\"nav-item\">\n-            <a class=\"nav-link active\" href=\"#\">New Pin</a>\n+            <a class=\"nav-link\" href=\"#\">New Pin</a>\n           </li>\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">Account</a>\n           </li>\n"
+                },
+                {
+                    "date": 1690507850660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <nav class=\"navbar navbar-expand-sm navbar-light bg-light mb-4\" aria-label=\"Third navbar example\">\n     <div class=\"container-fluid\">\n-      <a class=\"navbar-brand\" href=\"{{ path('app_home') }}\">Panterest</a>\n+        <a class=\"navbar-brand\" href=\"{{ path('app_home') }}\">Panterest</a>\n       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n"
+                },
+                {
+                    "date": 1690507859462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n <nav class=\"navbar navbar-expand-sm navbar-light bg-light mb-4\" aria-label=\"Third navbar example\">\n     <div class=\"container-fluid\">\n         <a class=\"navbar-brand\" href=\"{{ path('app_home') }}\">Panterest</a>\n-      <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n-        <span class=\"navbar-toggler-icon\"></span>\n-      </button>\n+        <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n+            <span class=\"navbar-toggler-icon\"></span>\n+        </button>\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample03\">\n         <ul class=\"navbar-nav ml-auto\">\n           <li class=\"nav-item\">\n"
+                },
+                {
+                    "date": 1690507865311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,11 @@\n         <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n             <span class=\"navbar-toggler-icon\"></span>\n         </button>\n \n-      <div class=\"collapse navbar-collapse\" id=\"navbarsExample03\">\n-        <ul class=\"navbar-nav ml-auto\">\n-          <li class=\"nav-item\">\n+        <div class=\"collapse navbar-collapse\" id=\"navbarsExample03\">\n+            <ul class=\"navbar-nav ml-auto\">\n+            <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">New Pin</a>\n           </li>\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">Account</a>\n"
+                },
+                {
+                    "date": 1690507870956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,11 @@\n         </button>\n \n         <div class=\"collapse navbar-collapse\" id=\"navbarsExample03\">\n             <ul class=\"navbar-nav ml-auto\">\n-            <li class=\"nav-item\">\n-            <a class=\"nav-link\" href=\"#\">New Pin</a>\n-          </li>\n+                <li class=\"nav-item\">\n+                    <a class=\"nav-link\" href=\"#\">New Pin</a>\n+                </li>\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">Account</a>\n           </li>\n           <li class=\"nav-item\">\n"
+                },
+                {
+                    "date": 1690507877674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,12 +9,12 @@\n             <ul class=\"navbar-nav ml-auto\">\n                 <li class=\"nav-item\">\n                     <a class=\"nav-link\" href=\"#\">New Pin</a>\n                 </li>\n+                <li class=\"nav-item\">\n+                    <a class=\"nav-link\" href=\"#\">Account</a>\n+                </li>\n           <li class=\"nav-item\">\n-            <a class=\"nav-link\" href=\"#\">Account</a>\n-          </li>\n-          <li class=\"nav-item\">\n             <a class=\"nav-link disabled\" aria-disabled=\"true\">Logout</a>\n           </li>\n         </ul>\n         \n"
+                },
+                {
+                    "date": 1690507884480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n                 </li>\n                 <li class=\"nav-item\">\n                     <a class=\"nav-link\" href=\"#\">Account</a>\n                 </li>\n-          <li class=\"nav-item\">\n-            <a class=\"nav-link disabled\" aria-disabled=\"true\">Logout</a>\n+                <li class=\"nav-item\">\n+                    <a class=\"nav-link disabled\" aria-disabled=\"true\">Logout</a>\n           </li>\n         </ul>\n         \n       </div>\n"
+                },
+                {
+                    "date": 1690507890281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,10 @@\n                     <a class=\"nav-link\" href=\"#\">Account</a>\n                 </li>\n                 <li class=\"nav-item\">\n                     <a class=\"nav-link disabled\" aria-disabled=\"true\">Logout</a>\n-          </li>\n-        </ul>\n+                </li>\n+            </ul>\n         \n       </div>\n     </div>\n   </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690507897694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,7 @@\n                 <li class=\"nav-item\">\n                     <a class=\"nav-link disabled\" aria-disabled=\"true\">Logout</a>\n                 </li>\n             </ul>\n-        \n-      </div>\n+        </div>\n     </div>\n\\ No newline at end of file\n-  </nav>\n+</nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690507918834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n             <span class=\"navbar-toggler-icon\"></span>\n         </button>\n \n         <div class=\"collapse navbar-collapse\" id=\"navbarsExample03\">\n-            <ul class=\"navbar-nav ml-auto\">\n+            <ul class=\"navbar-nav mr-auto\">\n                 <li class=\"nav-item\">\n                     <a class=\"nav-link\" href=\"#\">New Pin</a>\n                 </li>\n                 <li class=\"nav-item\">\n"
+                },
+                {
+                    "date": 1690507949961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n             <span class=\"navbar-toggler-icon\"></span>\n         </button>\n \n         <div class=\"collapse navbar-collapse\" id=\"navbarsExample03\">\n-            <ul class=\"navbar-nav mr-auto\">\n+            class=\"navbar-nav ml-auto\">\n                 <li class=\"nav-item\">\n                     <a class=\"nav-link\" href=\"#\">New Pin</a>\n                 </li>\n                 <li class=\"nav-item\">\n"
+                },
+                {
+                    "date": 1690507955159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n             <span class=\"navbar-toggler-icon\"></span>\n         </button>\n \n         <div class=\"collapse navbar-collapse\" id=\"navbarsExample03\">\n-            class=\"navbar-nav ml-auto\">\n+            <ul>class=\"navbar-nav ml-auto\">\n                 <li class=\"nav-item\">\n                     <a class=\"nav-link\" href=\"#\">New Pin</a>\n                 </li>\n                 <li class=\"nav-item\">\n"
+                },
+                {
+                    "date": 1690507962947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n             <span class=\"navbar-toggler-icon\"></span>\n         </button>\n \n         <div class=\"collapse navbar-collapse\" id=\"navbarsExample03\">\n-            <ul>class=\"navbar-nav ml-auto\">\n+            <ul class=\"navbar-nav ml-auto\">\n                 <li class=\"nav-item\">\n                     <a class=\"nav-link\" href=\"#\">New Pin</a>\n                 </li>\n                 <li class=\"nav-item\">\n"
+                },
+                {
+                    "date": 1690508000474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,8 @@\n                 <li class=\"nav-item\">\n                     <a class=\"nav-link disabled\" aria-disabled=\"true\">Logout</a>\n                 </li>\n             </ul>\n+        \n         </div>\n     </div>\n\\ No newline at end of file\n-</nav>\n+  </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690508007998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n         <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n             <span class=\"navbar-toggler-icon\"></span>\n         </button>\n \n-        <div class=\"collapse navbar-collapse\" id=\"navbarsExample03\">\n-            <ul class=\"navbar-nav ml-auto\">\n+        <div class=\"collapse navbar-collapse \" id=\"navbarsExample03\">\n+            <ul class=\"navbar-nav me-auto\">\n                 <li class=\"nav-item\">\n                     <a class=\"nav-link\" href=\"#\">New Pin</a>\n                 </li>\n                 <li class=\"nav-item\">\n"
+                },
+                {
+                    "date": 1690508016150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n             <span class=\"navbar-toggler-icon\"></span>\n         </button>\n \n-        <div class=\"collapse navbar-collapse \" id=\"navbarsExample03\">\n+        <div class=\"collapse navbar-collapse ml-auto\" id=\"navbarsExample03\">\n             <ul class=\"navbar-nav me-auto\">\n                 <li class=\"nav-item\">\n                     <a class=\"nav-link\" href=\"#\">New Pin</a>\n                 </li>\n"
+                },
+                {
+                    "date": 1690508052263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n             <span class=\"navbar-toggler-icon\"></span>\n         </button>\n \n-        <div class=\"collapse navbar-collapse ml-auto\" id=\"navbarsExample03\">\n+        <div class=\"collapse navbar-collapse ml-\" id=\"navbarsExample03\">\n             <ul class=\"navbar-nav me-auto\">\n                 <li class=\"nav-item\">\n                     <a class=\"nav-link\" href=\"#\">New Pin</a>\n                 </li>\n"
+                },
+                {
+                    "date": 1690508082604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,23 +1,33 @@\n-<nav class=\"navbar navbar-expand-sm navbar-light bg-light mb-4\" aria-label=\"Third navbar example\">\n+<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\" aria-label=\"Fifth navbar example\">\n     <div class=\"container-fluid\">\n-        <a class=\"navbar-brand\" href=\"{{ path('app_home') }}\">Panterest</a>\n-        <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n-            <span class=\"navbar-toggler-icon\"></span>\n-        </button>\n+      <a class=\"navbar-brand\" href=\"#\">Expand at lg</a>\n+      <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample05\" aria-controls=\"navbarsExample05\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n+        <span class=\"navbar-toggler-icon\"></span>\n+      </button>\n \n-        <div class=\"collapse navbar-collapse ml-\" id=\"navbarsExample03\">\n-            <ul class=\"navbar-nav me-auto\">\n-                <li class=\"nav-item\">\n-                    <a class=\"nav-link\" href=\"#\">New Pin</a>\n-                </li>\n-                <li class=\"nav-item\">\n-                    <a class=\"nav-link\" href=\"#\">Account</a>\n-                </li>\n-                <li class=\"nav-item\">\n-                    <a class=\"nav-link disabled\" aria-disabled=\"true\">Logout</a>\n-                </li>\n+      <div class=\"collapse navbar-collapse\" id=\"navbarsExample05\">\n+        <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">\n+          <li class=\"nav-item\">\n+            <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">Home</a>\n+          </li>\n+          <li class=\"nav-item\">\n+            <a class=\"nav-link\" href=\"#\">Link</a>\n+          </li>\n+          <li class=\"nav-item\">\n+            <a class=\"nav-link disabled\" aria-disabled=\"true\">Disabled</a>\n+          </li>\n+          <li class=\"nav-item dropdown\">\n+            <a class=\"nav-link dropdown-toggle\" href=\"#\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">Dropdown</a>\n+            <ul class=\"dropdown-menu\">\n+              <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n+              <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n+              <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n             </ul>\n-        \n-        </div>\n+          </li>\n+        </ul>\n+        <form role=\"search\">\n+          <input class=\"form-control\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\n+        </form>\n+      </div>\n     </div>\n   </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690508090638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,7 @@\n               <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n             </ul>\n           </li>\n         </ul>\n-        <form role=\"search\">\n-          <input class=\"form-control\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\n-        </form>\n       </div>\n     </div>\n   </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690508100609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,16 +15,8 @@\n           </li>\n           <li class=\"nav-item\">\n             <a class=\"nav-link disabled\" aria-disabled=\"true\">Disabled</a>\n           </li>\n-          <li class=\"nav-item dropdown\">\n-            <a class=\"nav-link dropdown-toggle\" href=\"#\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">Dropdown</a>\n-            <ul class=\"dropdown-menu\">\n-              <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n-              <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n-              <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n-            </ul>\n-          </li>\n         </ul>\n       </div>\n     </div>\n   </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690508108630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample05\">\n-        <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">\n+        <ul class=\"navbar-nav ml-auto mb-2 mb-lg-0\">\n           <li class=\"nav-item\">\n             <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">Home</a>\n           </li>\n           <li class=\"nav-item\">\n"
+                },
+                {
+                    "date": 1690508123027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\" aria-label=\"Fifth navbar example\">\n+<nav class=\"navbar navbar-expand-lg navbar-dark bg-l\" aria-label=\"Fifth navbar example\">\n     <div class=\"container-fluid\">\n       <a class=\"navbar-brand\" href=\"#\">Expand at lg</a>\n       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample05\" aria-controls=\"navbarsExample05\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n         <span class=\"navbar-toggler-icon\"></span>\n"
+                },
+                {
+                    "date": 1690508129837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-<nav class=\"navbar navbar-expand-lg navbar-dark bg-l\" aria-label=\"Fifth navbar example\">\n+<nav class=\"navbar navbar-expand-lg navbar-light bg-light\" aria-label=\"Fifth navbar example\">\n     <div class=\"container-fluid\">\n       <a class=\"navbar-brand\" href=\"#\">Expand at lg</a>\n       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample05\" aria-controls=\"navbarsExample05\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n         <span class=\"navbar-toggler-icon\"></span>\n"
+                },
+                {
+                    "date": 1690508142381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <nav class=\"navbar navbar-expand-lg navbar-light bg-light\" aria-label=\"Fifth navbar example\">\n     <div class=\"container-fluid\">\n-      <a class=\"navbar-brand\" href=\"#\">Expand at lg</a>\n+      <a class=\"navbar-brand\" href=\"#\">Pa</a>\n       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample05\" aria-controls=\"navbarsExample05\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n"
+                },
+                {
+                    "date": 1690508148223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <nav class=\"navbar navbar-expand-lg navbar-light bg-light\" aria-label=\"Fifth navbar example\">\n     <div class=\"container-fluid\">\n-      <a class=\"navbar-brand\" href=\"#\">Pa</a>\n+      <a class=\"navbar-brand\" href=\"#\">Pantere</a>\n       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample05\" aria-controls=\"navbarsExample05\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n"
+                },
+                {
+                    "date": 1690508163832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n <nav class=\"navbar navbar-expand-lg navbar-light bg-light\" aria-label=\"Fifth navbar example\">\n     <div class=\"container-fluid\">\n-      <a class=\"navbar-brand\" href=\"#\">Pantere</a>\n+      <a class=\"navbar-brand\" href=\"#\">Panterest</a>\n       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample05\" aria-controls=\"navbarsExample05\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample05\">\n         <ul class=\"navbar-nav ml-auto mb-2 mb-lg-0\">\n           <li class=\"nav-item\">\n-            <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">Home</a>\n+            <a class=\"nav-link\" aria-current=\"page\" href=\"#\">Home</a>\n           </li>\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">Link</a>\n           </li>\n"
+                },
+                {
+                    "date": 1690508168910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample05\">\n         <ul class=\"navbar-nav ml-auto mb-2 mb-lg-0\">\n           <li class=\"nav-item\">\n-            <a class=\"nav-link\" aria-current=\"page\" href=\"#\">Home</a>\n+            <a class=\"nav-link\" href=\"#\">Home</a>\n           </li>\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">Link</a>\n           </li>\n"
+                },
+                {
+                    "date": 1690508174516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample05\">\n-        <ul class=\"navbar-nav ml-auto mb-2 mb-lg-0\">\n+        <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">Home</a>\n           </li>\n           <li class=\"nav-item\">\n"
+                },
+                {
+                    "date": 1690508180984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample05\">\n-        <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">\n+        <ul class=\"navbar-nav me-auto \">\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">Home</a>\n           </li>\n           <li class=\"nav-item\">\n"
+                },
+                {
+                    "date": 1690508192292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample05\">\n         <ul class=\"navbar-nav me-auto \">\n           <li class=\"nav-item\">\n-            <a class=\"nav-link\" href=\"#\">Home</a>\n+            <a class=\"nav-link\" href=\"#\"></a>\n           </li>\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">Link</a>\n           </li>\n"
+                },
+                {
+                    "date": 1690508220419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,12 @@\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample05\">\n         <ul class=\"navbar-nav me-auto \">\n           <li class=\"nav-item\">\n-            <a class=\"nav-link\" href=\"#\"></a>\n+            <a class=\"nav-link\" href=\"#\">New pin</a>\n           </li>\n           <li class=\"nav-item\">\n-            <a class=\"nav-link\" href=\"#\">Link</a>\n+            <a class=\"nav-link\" href=\"#\">Account</a>\n           </li>\n           <li class=\"nav-item\">\n             <a class=\"nav-link disabled\" aria-disabled=\"true\">Disabled</a>\n           </li>\n"
+                },
+                {
+                    "date": 1690508236151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">Account</a>\n           </li>\n           <li class=\"nav-item\">\n-            <a class=\"nav-link disabled\" aria-disabled=\"true\">Disabled</a>\n+            <a class=\"nav-link disabled\" aria-disabled=\"true\">Log</a>\n           </li>\n         </ul>\n       </div>\n     </div>\n"
+                },
+                {
+                    "date": 1690508241331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">Account</a>\n           </li>\n           <li class=\"nav-item\">\n-            <a class=\"nav-link disabled\" aria-disabled=\"true\">Log</a>\n+            <a class=\"nav-link disabled\" aria-disabled=\"true\">Logout</a>\n           </li>\n         </ul>\n       </div>\n     </div>\n"
+                },
+                {
+                    "date": 1690508261907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample05\">\n-        <ul class=\"navbar-nav me-auto \">\n+        <ul class=\"navbar-nav ml-auto \">\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">New pin</a>\n           </li>\n           <li class=\"nav-item\">\n"
+                },
+                {
+                    "date": 1690508318931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample05\">\n-        <ul class=\"navbar-nav ml-auto \">\n+        <ul class=\"navbar-nav ml-auto ml\">\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">New pin</a>\n           </li>\n           <li class=\"nav-item\">\n"
+                },
+                {
+                    "date": 1690508326763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample05\">\n-        <ul class=\"navbar-nav ml-auto ml\">\n+        <ul class=\"navbar-nav me-auto ml-auto\">\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">New pin</a>\n           </li>\n           <li class=\"nav-item\">\n"
+                },
+                {
+                    "date": 1690508400248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <nav class=\"navbar navbar-expand-lg navbar-light bg-light\" aria-label=\"Fifth navbar example\">\n-    <div class=\"container-fluid\">\n+    <div class=\"container\">\n       <a class=\"navbar-brand\" href=\"#\">Panterest</a>\n       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample05\" aria-controls=\"navbarsExample05\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n"
+                },
+                {
+                    "date": 1690508426229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample05\">\n-        <ul class=\"navbar-nav me-auto ml-auto\">\n+        <ul class=\"navbar-nav ml-auto\">\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">New pin</a>\n           </li>\n           <li class=\"nav-item\">\n"
+                },
+                {
+                    "date": 1690756508953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         <span class=\"navbar-toggler-icon\"></span>\n       </button>\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample05\">\n-        <ul class=\"navbar-nav ml-auto\">\n+        <ul class=\"navbar-nav mx-auto\">\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">New pin</a>\n           </li>\n           <li class=\"nav-item\">\n"
+                },
+                {
+                    "date": 1690757088470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample05\">\n         <ul class=\"navbar-nav mx-auto\">\n           <li class=\"nav-item\">\n-            <a class=\"nav-link\" href=\"#\">New pin</a>\n+            <a class=\"nav-link\" href=\"app_home\">New pin</a>\n           </li>\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">Account</a>\n           </li>\n"
+                },
+                {
+                    "date": 1690757094799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n       <div class=\"collapse navbar-collapse\" id=\"navbarsExample05\">\n         <ul class=\"navbar-nav mx-auto\">\n           <li class=\"nav-item\">\n-            <a class=\"nav-link\" href=\"{{ path}}\">New pin</a>\n+            <a class=\"nav-link\" href=\"{{ path=}}\">New pin</a>\n           </li>\n           <li class=\"nav-item\">\n             <a class=\"nav-link\" href=\"#\">Account</a>\n           </li>\n"
+                }
+            ],
+            "date": 1690507190633,
+            "name": "Commit-0",
+            "content": "<nav class=\"navbar navbar-expand-sm navbar-dark bg-dark\" aria-label=\"Third navbar example\">\n    <div class=\"container-fluid\">\n      <a class=\"navbar-brand\" href=\"#\">Expand at sm</a>\n      <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n\n      <div class=\"collapse navbar-collapse\" id=\"navbarsExample03\">\n        <ul class=\"navbar-nav me-auto mb-2 mb-sm-0\">\n          <li class=\"nav-item\">\n            <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">Home</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"#\">Link</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link disabled\" aria-disabled=\"true\">Disabled</a>\n          </li>\n          <li class=\"nav-item dropdown\">\n            <a class=\"nav-link dropdown-toggle\" href=\"#\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">Dropdown</a>\n            <ul class=\"dropdown-menu\">\n              <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n            </ul>\n          </li>\n        </ul>\n        <form role=\"search\">\n          <input class=\"form-control\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\n        </form>\n      </div>\n    </div>\n  </nav>"
+        }
+    ]
+}

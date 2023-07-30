@@ -1,0 +1,110 @@
+{
+    "sourceFile": "templates/layouts/partiels/_footer.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 23,
+            "patches": [
+                {
+                    "date": 1690756166140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690756181154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <footer class=\"container text-center mt-5\">\n-‹p class=\"text-muted\"'>\n+p class=\"text-muted\"'>\n <small>\n §copy; {{ 'now'|date('Y') }} &middot;\n Built with <span class=\"text-danger\">&hearts; </span> by <a href=\" https://teachersdunet. com\">TDN</a>.\n < small>\n"
+                },
+                {
+                    "date": 1690756196622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,5 @@\n <footer class=\"container text-center mt-5\">\n-p class=\"text-muted\"'>\n-<small>\n-§copy; {{ 'now'|date('Y') }} &middot;\n-Built with <span class=\"text-danger\">&hearts; </span> by <a href=\" https://teachersdunet. com\">TDN</a>.\n-< small>\n-Y I Controller\n-• gitignore\n-R PinsController.php\n-> B Entity\n-? Form\n-a Renositorv\n-> E Twig f? Kernel.php\n-y templates\n-> I bundles\n+<p class=\"text-muted\"'>\n+  \n </ p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756204706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n <footer class=\"container text-center mt-5\">\n-<p class=\"text-muted\"'>\n-  \n-</ p>\n+    <p class=\"text-muted\">\n+    \n+    </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756212844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n-    \n+        <\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756223063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n-        <\n+        <small></small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756234078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n-        <small></small>\n+        <small>\n+            &\n+        </small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756246094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n         <small>\n-            &\n+            &copy\n         </small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756257439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n         <small>\n-            &copy\n+            &copy \n         </small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756265232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n         <small>\n-            &copy \n+            &copy {{ 'nox}}\n         </small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756273536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n         <small>\n-            &copy {{ 'nox}}\n+            &copy {{ 'now'|}}\n         </small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756279056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n         <small>\n-            &copy {{ 'now'|}}\n+            &copy {{ 'now'|date}}\n         </small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756285351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n         <small>\n-            &copy {{ 'now'|date}}\n+            &copy {{ 'now'|date(')}}\n         </small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756291732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n         <small>\n-            &copy {{ 'now'|date(')}}\n+            &copy {{ 'now'|date('y')}}\n         </small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756619612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n         <small>\n-            &copy {{ 'now'|date('y')}}\n+            helleo\n         </small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756643871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n         <small>\n-            helleo\n+        &copy ?\n         </small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756675067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n         <small>\n-        &copy ?\n+            §copy; {{ 'now'|date('Y') }} &middot;\n         </small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756690876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n         <small>\n-            §copy; {{ 'now'|date('Y') }} &middot;\n+            & copy; {{ 'now'|date('Y') }} &middot;\n         </small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756698811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n         <small>\n             & copy; {{ 'now'|date('Y') }} &middot;\n+            Built with <span class=\"text-danger'>&hearts; </span> by <a href=\"\n         </small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756709241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,8 @@\n     <p class=\"text-muted\">\n         <small>\n             & copy; {{ 'now'|date('Y') }} &middot;\n             Built with <span class=\"text-danger'>&hearts; </span> by <a href=\"\n+            https://teachersdunet. com\">TDN</a>.\n         </small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756720177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n         <small>\n             & copy; {{ 'now'|date('Y') }} &middot;\n-            Built with <span class=\"text-danger'>&hearts; </span> by <a href=\"\n-            https://teachersdunet. com\">TDN</a>.\n+            Built with <span class=\"text-danger'>&hearts; </span> by <a href=\"https://teachersdunet. com\">TDN</a>.\n         </small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756756395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n         <small>\n             & copy; {{ 'now'|date('Y') }} &middot;\n-            Built with <span class=\"text-danger'>&hearts; </span> by <a href=\"https://teachersdunet. com\">TDN</a>.\n+            Built with <span class=\"text-danger\">&hearts; </span> by <a href=\"https://teachersdunet. com\">TDN</a>.\n         </small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756773522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n         <small>\n             & copy; {{ 'now'|date('Y') }} &middot;\n-            Built with <span class=\"text-danger\">&hearts; </span> by <a href=\"https://teachersdunet. com\">TDN</a>.\n+            Built with <span class=\"text-danger\">&hearts; </span> by <a href=\"\">TDN</a>.\n         </small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690756778820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <footer class=\"container text-center mt-5\">\n     <p class=\"text-muted\">\n         <small>\n             & copy; {{ 'now'|date('Y') }} &middot;\n-            Built with <span class=\"text-danger\">&hearts; </span> by <a href=\"\">TDN</a>.\n+            Built with <span class=\"text-danger\">&hearts; </span> by <a href=\"\">Kfm </a>.\n         </small>\n     </p>\n </footer>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1690756166140,
+            "name": "Commit-0",
+            "content": "<footer class=\"container text-center mt-5\">\n‹p class=\"text-muted\"'>\n<small>\n§copy; {{ 'now'|date('Y') }} &middot;\nBuilt with <span class=\"text-danger\">&hearts; </span> by <a href=\" https://teachersdunet. com\">TDN</a>.\n< small>\nY I Controller\n• gitignore\nR PinsController.php\n> B Entity\n? Form\na Renositorv\n> E Twig f? Kernel.php\ny templates\n> I bundles\n</ p>\n</footer>"
+        }
+    ]
+}

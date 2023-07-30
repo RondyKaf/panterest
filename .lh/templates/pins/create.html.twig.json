@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 37,
+            "activePatchIndex": 73,
             "patches": [
                 {
                     "date": 1690425900330,
@@ -156,6 +156,150 @@
                 {
                     "date": 1690503952092,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-{% extends 'laypbase.html.twig' %}\n+{% extends 'layouts/base.html.twig' %}\n \n {% block title \"New Pin\" %}\n \n {% block body %}\n"
+                },
+                {
+                    "date": 1690506293570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n         {{ form_widget(formulaire) }}\n-        <input type=\"submit\" value=\"Create Pin\">\n+        <input type=\"submit\" value=\"Create Pin\" clas>\n     {{ form_end(formulaire)}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690506298705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n         {{ form_widget(formulaire) }}\n-        <input type=\"submit\" value=\"Create Pin\" clas>\n+        <input type=\"submit\" value=\"Create Pin\" class=\"btn >\n     {{ form_end(formulaire)}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690506304280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n         {{ form_widget(formulaire) }}\n-        <input type=\"submit\" value=\"Create Pin\" class=\"btn >\n+        <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary>\n     {{ form_end(formulaire)}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690506344716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n         {{ form_widget(formulaire) }}\n-        <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary>\n+        <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n     {{ form_end(formulaire)}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690506386077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n         {{ form_widget(formulaire) }}\n-        <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n+        <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primar\">\n     {{ form_end(formulaire)}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690506391546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n         {{ form_widget(formulaire) }}\n-        <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primar\">\n+        <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn\">\n     {{ form_end(formulaire)}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690506560127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,8 @@\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n         {{ form_widget(formulaire) }}\n-        <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn\">\n+        <button class=\"btn btn-primary\" type=\"button\">Button</button>\n+        <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n     {{ form_end(formulaire)}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690506573516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n         {{ form_widget(formulaire) }}\n-        <button class=\"btn btn-primary\" type=\"button\">Button</button>\n+        <button class=\"btn btn-primary bt\" type=\"button\">Button</button>\n         <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n     {{ form_end(formulaire)}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690506583007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n         {{ form_widget(formulaire) }}\n-        <button class=\"btn btn-primary bt\" type=\"button\">Button</button>\n+        <button class=\"btn btn-primary btn\" type=\"button\">Button</button>\n         <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n     {{ form_end(formulaire)}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690506595696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n         {{ form_widget(formulaire) }}\n-        <button class=\"btn btn-primary btn\" type=\"button\">Button</button>\n+        <button class=\"btn btn-primary\" type=\"button\">Button</button>\n         <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n     {{ form_end(formulaire)}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690757312344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,13 @@\n \n {% block title \"New Pin\" %}\n \n {% block body %}\n+    div\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n         {{ form_widget(formulaire) }}\n-        <button class=\"btn btn-primary\" type=\"button\">Button</button>\n+     \n         <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n     {{ form_end(formulaire)}}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1690757319769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n {% block title \"New Pin\" %}\n \n {% block body %}\n-    div\n+    <div></div>\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n         {{ form_widget(formulaire) }}\n"
+                },
+                {
+                    "date": 1690757324937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,10 @@\n \n {% block title \"New Pin\" %}\n \n {% block body %}\n-    <div></div>\n+    <div>\n+    </div>\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n         {{ form_widget(formulaire) }}\n"
+                },
+                {
+                    "date": 1690757331247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n {% block title \"New Pin\" %}\n \n {% block body %}\n-    <div>\n+    <div class>\n     </div>\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n"
+                },
+                {
+                    "date": 1690757338908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,10 @@\n \n {% block title \"New Pin\" %}\n \n {% block body %}\n-    <div class>\n+    <div class=\"row\">\n+        div\n     </div>\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n"
+                },
+                {
+                    "date": 1690757347981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n {% block title \"New Pin\" %}\n \n {% block body %}\n     <div class=\"row\">\n-        div\n+        <div class=\"\n     </div>\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n"
+                },
+                {
+                    "date": 1690757353602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n {% block title \"New Pin\" %}\n \n {% block body %}\n     <div class=\"row\">\n-        <div class=\"\n+        <div class=\"col-\n     </div>\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n"
+                },
+                {
+                    "date": 1690757359654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n {% block title \"New Pin\" %}\n \n {% block body %}\n     <div class=\"row\">\n-        <div class=\"col-\n+        <div class=\"col-md-6\n     </div>\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n"
+                },
+                {
+                    "date": 1690757365871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,10 @@\n {% block title \"New Pin\" %}\n \n {% block body %}\n     <div class=\"row\">\n-        <div class=\"col-md-6\n+        <div class=\"col-md-6\">\n+        </\n     </div>\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n"
+                },
+                {
+                    "date": 1690757373902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,10 @@\n \n {% block body %}\n     <div class=\"row\">\n         <div class=\"col-md-6\">\n-        </\n+            \n+        </div>\n     </div>\n     <h1>Create Pin</h1>\n \n     {{ form_start(formulaire) }}\n"
+                },
+                {
+                    "date": 1690757396872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,15 +4,11 @@\n \n {% block body %}\n     <div class=\"row\">\n         <div class=\"col-md-6\">\n-            \n+\n         </div>\n     </div>\n     <h1>Create Pin</h1>\n \n-    {{ form_start(formulaire) }}\n-        {{ form_widget(formulaire) }}\n-     \n-        <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n-    {{ form_end(formulaire)}}\n+    \n {% endblock %}\n"
+                },
+                {
+                    "date": 1690757402297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,13 @@\n \n {% block body %}\n     <div class=\"row\">\n         <div class=\"col-md-6\">\n-\n+            {{ form_start(formulaire) }}\n+        {{ form_widget(formulaire) }}\n+     \n+        <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n+    {{ form_end(formulaire)}}\n         </div>\n     </div>\n     <h1>Create Pin</h1>\n \n"
+                },
+                {
+                    "date": 1690757408007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n         <div class=\"col-md-6\">\n             {{ form_start(formulaire) }}\n         {{ form_widget(formulaire) }}\n      \n-        <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n-    {{ form_end(formulaire)}}\n+                <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n+            {{ form_end(formulaire)}}\n         </div>\n     </div>\n     <h1>Create Pin</h1>\n \n"
+                },
+                {
+                    "date": 1690757413789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n {% block body %}\n     <div class=\"row\">\n         <div class=\"col-md-6\">\n             {{ form_start(formulaire) }}\n-        {{ form_widget(formulaire) }}\n+                {{ form_widget(formulaire) }}\n      \n                 <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n             {{ form_end(formulaire)}}\n         </div>\n"
+                },
+                {
+                    "date": 1690757473691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,12 @@\n             {{ form_start(formulaire) }}\n                 {{ form_widget(formulaire) }}\n      \n                 <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n+                <div class=\"d-grid gap-2\">\n+  <button class=\"btn btn-primary\" type=\"button\">Button</button>\n+  <button class=\"btn btn-primary\" type=\"button\">Button</button>\n+</div>\n             {{ form_end(formulaire)}}\n         </div>\n     </div>\n     <h1>Create Pin</h1>\n"
+                },
+                {
+                    "date": 1690757479202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n                 {{ form_widget(formulaire) }}\n      \n                 <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n                 <div class=\"d-grid gap-2\">\n+             <button class=\"btn btn-primary\" type=\"button\">Button</button>\n   <button class=\"btn btn-primary\" type=\"button\">Button</button>\n-  <button class=\"btn btn-primary\" type=\"button\">Button</button>\n </div>\n             {{ form_end(formulaire)}}\n         </div>\n     </div>\n"
+                },
+                {
+                    "date": 1690757487184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n                 {{ form_widget(formulaire) }}\n      \n                 <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n                 <div class=\"d-grid gap-2\">\n-             <button class=\"btn btn-primary\" type=\"button\">Button</button>\n-  <button class=\"btn btn-primary\" type=\"button\">Button</button>\n+                    <button class=\"btn btn-primary\" type=\"button\">Button</button>\n+                    <button class=\"btn btn-primary\" type=\"button\">Button</button>\n </div>\n             {{ form_end(formulaire)}}\n         </div>\n     </div>\n"
+                },
+                {
+                    "date": 1690757505674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,13 @@\n             {{ form_start(formulaire) }}\n                 {{ form_widget(formulaire) }}\n      \n                 <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n+                 <button class=\"btn btn-primary\" type=\"button\">Button</button>\n                 <div class=\"d-grid gap-2\">\n                     <button class=\"btn btn-primary\" type=\"button\">Button</button>\n                     <button class=\"btn btn-primary\" type=\"button\">Button</button>\n-</div>\n+                </div>\n             {{ form_end(formulaire)}}\n         </div>\n     </div>\n     <h1>Create Pin</h1>\n"
+                },
+                {
+                    "date": 1690757536795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n             {{ form_start(formulaire) }}\n                 {{ form_widget(formulaire) }}\n      \n                 <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n-                 <button class=\"btn btn-primary\" type=\"button\">Button</button>\n+                <button class=\"btn btn-primary\" type=\"button\">Button</button>\n                 <div class=\"d-grid gap-2\">\n                     <button class=\"btn btn-primary\" type=\"button\">Button</button>\n                     <button class=\"btn btn-primary\" type=\"button\">Button</button>\n                 </div>\n"
+                },
+                {
+                    "date": 1690757542214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n             {{ form_start(formulaire) }}\n                 {{ form_widget(formulaire) }}\n      \n                 <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n-                <button class=\"btn btn-primary\" type=\"button\">Button</button>\n+                <button class=\"btn btn-primary btn\" type=\"button\">Button</button>\n                 <div class=\"d-grid gap-2\">\n                     <button class=\"btn btn-primary\" type=\"button\">Button</button>\n                     <button class=\"btn btn-primary\" type=\"button\">Button</button>\n                 </div>\n"
+                },
+                {
+                    "date": 1690757562190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,9 @@\n         <div class=\"col-md-6\">\n             {{ form_start(formulaire) }}\n                 {{ form_widget(formulaire) }}\n      \n-                <input type=\"submit\" value=\"Create Pin\" class=\"btn btn-primary btn-block\">\n-                <button class=\"btn btn-primary btn\" type=\"button\">Button</button>\n+                <button class=\"btn btn-primary btn-block\" type=\"button\">Button</button>\n                 <div class=\"d-grid gap-2\">\n                     <button class=\"btn btn-primary\" type=\"button\">Button</button>\n                     <button class=\"btn btn-primary\" type=\"button\">Button</button>\n                 </div>\n"
+                },
+                {
+                    "date": 1690757573571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,9 @@\n     <div class=\"row\">\n         <div class=\"col-md-6\">\n             {{ form_start(formulaire) }}\n                 {{ form_widget(formulaire) }}\n-     \n-                <button class=\"btn btn-primary btn-block\" type=\"button\">Button</button>\n+\n                 <div class=\"d-grid gap-2\">\n                     <button class=\"btn btn-primary\" type=\"button\">Button</button>\n                     <button class=\"btn btn-primary\" type=\"button\">Button</button>\n                 </div>\n"
+                },
+                {
+                    "date": 1690757582173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n                 {{ form_widget(formulaire) }}\n \n                 <div class=\"d-grid gap-2\">\n                     <button class=\"btn btn-primary\" type=\"button\">Button</button>\n-                    <button class=\"btn btn-primary\" type=\"button\">Button</button>\n                 </div>\n             {{ form_end(formulaire)}}\n         </div>\n     </div>\n"
+                },
+                {
+                    "date": 1690757613769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n {% block title \"New Pin\" %}\n \n {% block body %}\n     <div class=\"row\">\n-        <div class=\"col-md-6\">\n+        <div class=\"col-md-6 mx\">\n             {{ form_start(formulaire) }}\n                 {{ form_widget(formulaire) }}\n \n                 <div class=\"d-grid gap-2\">\n"
+                },
+                {
+                    "date": 1690757632998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n {% block title \"New Pin\" %}\n \n {% block body %}\n     <div class=\"row\">\n-        <div class=\"col-md-6 mx\">\n+        <div class=\"col-md-6 mx-auto\">\n             {{ form_start(formulaire) }}\n                 {{ form_widget(formulaire) }}\n \n                 <div class=\"d-grid gap-2\">\n@@ -13,8 +13,8 @@\n                 </div>\n             {{ form_end(formulaire)}}\n         </div>\n     </div>\n-    <h1>Create Pin</h1>\n+    \n \n     \n {% endblock %}\n"
+                },
+                {
+                    "date": 1690757639236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n \n {% block body %}\n     <div class=\"row\">\n         <div class=\"col-md-6 mx-auto\">\n+            <h1>Create Pin</h1>\n             {{ form_start(formulaire) }}\n                 {{ form_widget(formulaire) }}\n \n                 <div class=\"d-grid gap-2\">\n@@ -14,7 +15,5 @@\n             {{ form_end(formulaire)}}\n         </div>\n     </div>\n     \n-\n-    \n {% endblock %}\n"
                 }
             ],
             "date": 1690425900330,
