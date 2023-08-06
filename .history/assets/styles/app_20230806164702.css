@@ -1,8 +1,12 @@
+body {
+    background-color: white;
+}
+
 html,
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
-    background-color: aqua;
+    background-color: ;
 }
 
 .alert {

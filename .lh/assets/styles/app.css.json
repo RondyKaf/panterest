@@ -1,0 +1,58 @@
+{
+    "sourceFile": "assets/styles/app.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1690761462649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690761476939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n body {\n     background-color: lightgray;\n }\n \n-h\n\\ No newline at end of file\n+h1{\n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690761484175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n     background-color: lightgray;\n }\n \n h1{\n-    \n+    color: ;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690761745993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,30 @@\n body {\n     background-color: lightgray;\n }\n \n-h1{\n-    color: ;\n+html,\n+body {\n+    font-family: 'Montserrat', sans-serif;\n+    font-weight: 100;\n+}\n+\n+.alert {\n+    padding: 10px;\n+    color: white;\n+    text-align: center;\n+    margin: 0;\n+    border: 0;\n+    border-radius: 0;\n+}\n+\n+.alert-success {\n+    background-color: green;\n+}\n+\n+.alert-error {\n+    background-color: red;\n+}\n+\n+.alert-info {\n+    background-color: blue;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690761999373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n body {\n-    background-color: lightgray;\n+    background-color: l;\n }\n \n html,\n body {\n"
+                },
+                {
+                    "date": 1691336811001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n body {\n-    background-color: l;\n+    background-color: white;\n }\n \n html,\n body {\n@@ -26,5 +26,5 @@\n }\n \n .alert-info {\n     background-color: blue;\n-}\n\\ No newline at end of file\n+}\n"
+                },
+                {
+                    "date": 1691336817662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n html,\n body {\n     font-family: 'Montserrat', sans-serif;\n     font-weight: 100;\n+    back\n }\n \n .alert {\n     padding: 10px;\n"
+                },
+                {
+                    "date": 1691336822890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n html,\n body {\n     font-family: 'Montserrat', sans-serif;\n     font-weight: 100;\n-    back\n+    background-color: ;\n }\n \n .alert {\n     padding: 10px;\n"
+                },
+                {
+                    "date": 1691336849117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n html,\n body {\n     font-family: 'Montserrat', sans-serif;\n     font-weight: 100;\n-    background-color: ;\n+    background-color: aqua;\n }\n \n .alert {\n     padding: 10px;\n"
+                },
+                {
+                    "date": 1691336868427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,5 +27,5 @@\n }\n \n .alert-info {\n     background-color: blue;\n-}\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691337000032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,4 @@\n-body {\n-    background-color: white;\n-}\n-\n html,\n body {\n     font-family: 'Montserrat', sans-serif;\n     font-weight: 100;\n"
+                }
+            ],
+            "date": 1690761462649,
+            "name": "Commit-0",
+            "content": "body {\n    background-color: lightgray;\n}\n\nh"
+        }
+    ]
+}

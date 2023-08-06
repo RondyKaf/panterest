@@ -19,10 +19,12 @@ class Pin
 
     #[ORM\Column(length: 255)]
     #[Assert\NotBlank(message:"Veuillez remplir la case")]
+    #[Assert\length(min:3)]
     private ?string $title = null;
 
     #[ORM\Column(type: Types::TEXT)]
-    #[Assert\length(min:10,minMessage:'Il faut plus de 10 caractères')]
+    #[Assert\NotBlank]
+    #[Assert\length(min:10,minMessage:('Il faut plus de 10 caractères'))]
     private ?string $description = null;
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]

@@ -1,8 +1,11 @@
+body {
+    background-color: l;
+}
+
 html,
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
-    background-color: aqua;
 }
 
 .alert {

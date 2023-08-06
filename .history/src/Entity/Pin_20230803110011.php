@@ -22,7 +22,7 @@ class Pin
     private ?string $title = null;
 
     #[ORM\Column(type: Types::TEXT)]
-    #[Assert\length(min:10,minMessage:'Il faut plus de 10 caractères')]
+    #[Assert\length(min:10,minMessage:('Il faut plus de 10 caractères'))]
     private ?string $description = null;
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
